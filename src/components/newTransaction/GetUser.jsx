@@ -1,15 +1,15 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { TextField, Autocomplete } from '@mui/material';
-import Axios from '../../axios/Axios';
+import { readQuery } from '../../axios/AxiosFunctions';
 import Inputs from './Inputs';
 
 export default function GetUser(props) {
   const [userId, setUserId] = useState(null);
-  const [count, setCount] = useState(0);
-  const [user, setUser] = useState(null);
+  const [user, setUser] = useState(false);
+
   const users = props.users;
   const userOptions = users.map((user) => ({
-    label: user.id.toString(), // Convert the ID to a string
+    label: user.name.toString(), // Convert the ID to a string
     value: user.id, // Keep the ID as a number
   }));
 
@@ -24,17 +24,15 @@ export default function GetUser(props) {
         id="User ID"
         onChange={(e, selectedOption) => {
           setUserId(selectedOption ? selectedOption.value : null);
-          setCount(count + 1);
+          readQuery('users', selectedOption.value)
+          .then(response => setUser(response[0]))
         }}
         options={userOptions}
         getOptionLabel={(option) => option.label}
         sx={{ width: 195, margin: '0 auto', textAlign: 'center' }}
         renderInput={(params) => <TextField {...params} sx={{ textAlign: 'center' }}  label="User ID" />}
       /><br/>
-      {userId && count===1 ? (
-        <Axios setResponse={setUser} call={'get'} type={'debts'} id={userId} />
-      ) : null}
-      <Inputs user={user} userId={userId}/>
+      {user?<Inputs user={user} userId={userId}/>: null}
     </>
   );
 }

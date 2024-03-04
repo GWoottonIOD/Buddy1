@@ -1,21 +1,21 @@
 import React, { useEffect, useState } from 'react'
-import Axios from '../../axios/Axios'
+import { updateQuery, createQuery } from '../../axios/AxiosFunctions';
+import { useNavigate } from 'react-router-dom';
 
 export default function PublishDebt(props) {
-  const [count, setCount] = useState(0);
-  const [obj, setObj] = useState(null);
+  const navigate = useNavigate();
 
   useEffect(() => {
-    const sum = props.total + props.amount
+    const sum = props.user.total + props.amount
     parseInt(sum)
     console.log(sum)
-    setObj({ 'userID': props.userId, 'amount': props.amount, 'duedate': props.dueDate, 'total': sum, 'paid': false })
+    createQuery('debts',
+      { userID: props.userId, amount: props.amount, duedate: props.dueDate, 
+      total: sum, paid: false })
+    updateQuery('users', { id: sum , total: sum })
+    navigate('/')
   },[])
 
-  return (
-    <>
-      {count === 0 && obj ? <Axios call={'post'} type={'debts'} object={obj} setCount={setCount} count={count}/> : null}
-      {count === 1 && obj ? <Axios call={'put'} type={'users'} object={{ 'total': obj.total}} setCount={setCount} count={count} id={props.userId}/> : null}
-    </>
-  )
+  return null
+  
 }

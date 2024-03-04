@@ -1,16 +1,17 @@
 import React, {useState} from 'react'
 import { Button, TextField } from '@mui/material'
-import Axios from '../../axios/Axios'
+import { updateQuery } from '../../axios/AxiosFunctions';
+import { useNavigate } from 'react-router-dom';
 
 export default function Page(props) {
     const [name, setName] = useState(props.currentUser.name)
     const [username, setUsername] = useState(props.currentUser.username)
     const [password, setPassword] = useState('')
-    const [vPassword, setVPassword] = useState('')
-    const [count, setCount] = useState(false)
+    const [vPassword, setVPassword] = useState(null)
+    const navigate = useNavigate()
 
     const currentUser = props.currentUser
-    const updateUser = { 'name': name, 'username': username, 'password': password }
+    const updateUser = { id: currentUser.id, name: name, username: username, password: password }
 
   return (
     <>
@@ -20,12 +21,21 @@ export default function Page(props) {
               <h3>{currentUser.name}</h3>
               <h5>You currently owe: ${currentUser.total}</h5>
               <form>
-                <div><TextField type='text' onChange={e => setName(e.target.value)} defaultValue={currentUser.name} label="Name"></TextField></div><br></br>
-                <div><TextField type='text' onChange={e => setUsername(e.target.value)} defaultValue={currentUser.username} label="Username"></TextField></div><br></br>
-                <div><TextField type='password' onChange={e => setPassword(e.target.value)} label="Password"></TextField></div><br></br>
-                <div><TextField type='password' onChange={e => setVPassword(e.target.value)} label="Verify Password"></TextField></div><br></br>
-                <Button onClick={password === vPassword ?()=>setCount(count+1):()=>alert('These passwords do not match.')}>Update</Button>
-                {count===1 ? <Axios call={'put'} type={'users'} id={currentUser.id} object={updateUser} setCount={setCount} count={count}/> : null}
+                <div><TextField type='text' onChange={e => setName(e.target.value)} 
+                  defaultValue={currentUser.name} label="Name"></TextField>
+                </div><br/>
+                <div><TextField type='text' onChange={e => setUsername(e.target.value)} 
+                  defaultValue={currentUser.username} label="Username"></TextField>
+                </div><br/>
+                <div><TextField type='password' onChange={e => setPassword(e.target.value)}
+                  label="Password"></TextField>
+                </div><br/>
+                <div><TextField type='password' onChange={e => setVPassword(e.target.value)}
+                  label="Verify Password"></TextField>
+                </div><br/>
+                <Button onClick={password === vPassword 
+                  ? updateQuery('users', updateUser).then(() => navigate('/users')) 
+                  : () => alert('These passwords do not match.')}>Update</Button>
               </form>
             </>
             : <p> User: {currentUser.username} not found</p>

@@ -10,7 +10,8 @@ const getLimiter = rateLimit({
     max: 1, // 1 request per windowMs
   });
 
-router.get('/', getLimiter, (req, res) => {
+// router.get('/', getLimiter, (req, res) => {
+router.get('/', (req, res) => {
     Controllers.getUsers(req, res);
 })
 
