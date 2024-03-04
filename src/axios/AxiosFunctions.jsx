@@ -21,6 +21,7 @@ export const readQuery = (table, filter) => {
     return axios.get(axdebts)
         .then(response => { 
             console.log(response.data.data);
+            return response.data.data
          })
         .catch(error => { 
             console.log(error)
@@ -30,7 +31,7 @@ export const readQuery = (table, filter) => {
 
 export const updateQuery = (table, object) => {
     console.log(table, object, 'update')
-    const axdebts = `http://localhost:8063/api/${table}/put/${object.debtID}`
+    const axdebts = `http://localhost:8063/api/${table}/put/${object.id}`
     return axios.put(axdebts, object)
         .then(response => { 
             console.log(response.data.data);

@@ -23,7 +23,7 @@ export default function PaidDeleteComponent({ debt }) {
 
     //delete a debt
     const debtDelete = (debtid, userid, amount, paid) => {
-        console.log('deleted')
+        console.log(debtid)
         const axdebts = `http://localhost:8063/api/debts/delete/${debtid}`
         axios.delete(axdebts)
             .then(response => {

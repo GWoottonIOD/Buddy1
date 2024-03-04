@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React, {useState, useContext} from 'react';
 import Button from '@mui/material/Button';
 import Dialog from '@mui/material/Dialog';
 import DialogActions from '@mui/material/DialogActions';
@@ -7,9 +7,9 @@ import axios from 'axios'
 import DialogTitle from '@mui/material/DialogTitle';
 import Paper from '@mui/material/Paper';
 import Draggable from 'react-draggable';
-import { TextField, formLabelClasses } from '@mui/material';
+import { TextField } from '@mui/material';
 import { DebtContext } from '../../context/DebtContext';
-import { createQuery, updateQuery } from '../../axios/AxiosFunctions';
+import { createQuery, updateQuery, readQuery } from '../../axios/AxiosFunctions';
 
 function PaperComponent(props) {
   return (
@@ -24,8 +24,9 @@ function PaperComponent(props) {
 
 export default function DraggableDialog(props) {
   const [open, setOpen] = useState(props.edit);
-  const payment = { 'userID': props.debt.userID, 'debtID': props.debt.id, 'amount': props.amount }
-  const debt = { 'id': props.debt.id, 'amount': props.debt.amount - props.amount, 'paid': props.debt.amount === props.amount? true : false }
+  const { setDebts, debts } = useContext(DebtContext);
+  const payment = { userID: props.debt.userID, debtID: props.debt.id, amount: props.amount }
+  const debt = { id: props.debt.id, amount: props.debt.amount - props.amount, paid: props.debt.amount === props.amount? true : false }
 
   const addPayment = () => {
     const pay = { 'userID': props.debt.userID, 'debtID': props.debt.id, 'amount': props.amount }
@@ -53,10 +54,6 @@ const editPayment = () => {
 
   const handleClose = () => {
     setOpen(false);
-    props.amount === props.debt.amount
-        ?props.debtPaid(props.debt.id, props.debt.userID, props.debt.amount)
-        :null
-        props.setEdit(false)
     };
 
   return (
@@ -84,9 +81,13 @@ const editPayment = () => {
           <Button onClick={ () => { 
             createQuery('payments', payment)
             .then(()=> updateQuery('debts', debt))
-            // .then(()=> updateQuery('users', pay)) 
+            .then(()=> readQuery('users', props.debt.userID))
+            .then(response=> updateQuery('users', 
+              {id: props.debt.userID, total: response[0].total - props.amount}))
+            .then(()=> readQuery('debts'))
+            .then((response)=> setDebts(response))
+            .then(handleClose) 
           }
-            // addPayment
           }
             sx={{'&&:focus': {outline: 'none'}}}>
                 Submit
