@@ -26,7 +26,7 @@ export default function FilterComponent(props) {
 
   const filterUnpaid = (response) => {
     let filteredTransaction
-    if (!currentUser.UserAdmin) {
+    if (currentUser.UserAdmin===0) {
       filteredTransaction = response.filter((transaction) => transaction.paid === false && transaction.userID === currentUser.id)
     } else {
       filteredTransaction = response.filter((transaction) => transaction.paid === false)

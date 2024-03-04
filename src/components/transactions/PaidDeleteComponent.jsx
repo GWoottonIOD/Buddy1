@@ -62,8 +62,7 @@ export default function PaidDeleteComponent({ debt }) {
     return (
         <>
             {debt.paid?null:<Button size="small" 
-                // onClick={() => { debtPaid(debt.id, debt.userID, debt.amount) }}
-                onClick={updateQuery('debts', { 'id': debt.id, 'paid': true })}
+                onClick={() => updateQuery('debts', { 'id': debt.id, 'paid': true })}
                 sx={{'&&:focus': {outline: 'none'}}}><DoneIcon/>
             </Button>}
             <Button size="small" 

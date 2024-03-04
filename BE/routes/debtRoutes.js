@@ -15,7 +15,8 @@ const postLimiter = rateLimit({
     max: 1, // 1 request per windowMs
   }); 
 
-router.get('/', getLimiter, (req, res) => { 
+router.get('/', (req, res) => { 
+    // router.get('/', getLimiter, (req, res) => { 
     Controllers.debtController.getDebts(req, res);
     console.log(res.err)
 })

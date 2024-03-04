@@ -14,7 +14,7 @@ export const createQuery = (table, object) => {
 }
 
 export const readQuery = (table, filter) => {
-    console.log(`Reading JSON Data of ${filter}`)
+    console.log(`Reading JSON Data`)
     const axdebts = filter 
     ? `http://localhost:8063/api/${table}/${filter}` 
     : `http://localhost:8063/api/${table}/`
