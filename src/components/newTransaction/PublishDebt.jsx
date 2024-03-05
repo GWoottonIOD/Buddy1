@@ -12,10 +12,10 @@ export default function PublishDebt(props) {
     createQuery('debts',
       { userID: props.userId, amount: props.amount, duedate: props.dueDate, 
       total: sum, paid: false })
-    updateQuery('users', { id: sum , total: sum })
+    updateQuery('users', { id: props.userId , total: sum })
     navigate('/')
   },[])
 
   return null
-  
+
 }
