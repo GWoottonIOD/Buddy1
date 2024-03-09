@@ -6,7 +6,7 @@ import DoneIcon from '@mui/icons-material/Done';
 import EditIcon from '@mui/icons-material/Edit';
 import { DebtContext } from '../../context/DebtContext';
 import DraggableDialog from '../editTransaction/DraggableDialog';
-import { createQuery, updateQuery, readQuery } from '../../axios/AxiosFunctions';
+import { updateQuery } from '../../axios/AxiosFunctions';
 
 export default function PaidDeleteComponent({ debt }) {
     const { setDebts, debts } = useContext(DebtContext);
