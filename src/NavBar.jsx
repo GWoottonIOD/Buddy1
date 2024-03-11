@@ -14,7 +14,7 @@ const Navbar = () => {
   const users = <NavLink id="link" to='/users' exact="true" forcerefresh="true">Users</NavLink>
   const debts = <NavLink id="link" to='/' exact="true" forcerefresh="true">Transactions</NavLink>
   const chats = <NavLink id="link" to='/chat' exact="true" forcerefresh="true">Chat</NavLink>
-  const clear = <NavLink onClick={() => setQuery({query: query.query, doISearch: !query.doISearch})} outline='none' ><ClearIcon id="link" sx={{ mr: 2 }} /></NavLink>
+  const clear = <NavLink onClick={() => setQuery({query: '', doISearch: !query.doISearch})} outline='none' ><ClearIcon id="link" sx={{ mr: 2 }} /></NavLink>
   const search = <NavLink onClick={() => setQuery({query: query.query, doISearch: !query.doISearch})} outline='none' ><SearchIcon id="link" sx={{ mr: 2 }} /></NavLink>
 
   //gets the logged in user
@@ -23,9 +23,9 @@ const Navbar = () => {
   const pathname = location.pathname
   const [doISearch, setDoISearch] = useState(false)
 
-  useEffect(()=> {
-    setQuery({query: query.query, doISearch: false})
-  }, [pageType])
+  // useEffect(()=> {
+  //   setQuery({query: query.query, doISearch: false})
+  // }, [pageType])
   
   return (
     <>

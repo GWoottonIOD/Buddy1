@@ -10,14 +10,11 @@ import Axios from './axios/Axios';
 
 export default function DebtSearch(props) {
   let [textField, setTextField] = useState('')
-  const {setDebts} = useContext(DebtContext);
-  const {setUsers} = useContext(UsersContext);
-  const {pageType} = useContext(PageTypeContext);
   const {query, setQuery} = useContext(SearchContext);
 
-  useEffect(() => {
-    setQuery({query: null, doISearch: query.doISearch})
-  },[query])
+  // useEffect(() => {
+  //   setQuery({query: null, doISearch: query.doISearch})
+  // },[query.query])
   
   //if the textfield is empty and button is pushed, reloads the screen. if not, sets the query with input.
   const setTheQuery = () => {
@@ -31,9 +28,6 @@ export default function DebtSearch(props) {
         <Button id="searchButton" size="small" onClick={()=>setTheQuery()} sx={{'&&:focus': {outline: 'none'}}}>
           <SearchIcon sx={{ mr: 2 }} />
         </Button>
-        {pageType==='debts'
-        ?<>{query.query?<Axios setResponse={setDebts} call={'get'} type={pageType} id={query.query}/>:null}</>
-        :<>{query.query?<Axios setResponse={setUsers} call={'get'} type={pageType} id={query.query}/>:null}</>}
       </div>
       
   )

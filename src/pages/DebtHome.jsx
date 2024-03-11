@@ -6,8 +6,7 @@ import { DebtContext } from '../context/DebtContext';
 import { PageTypeContext } from '../context/PageTypeContext'
 import { SearchContext } from '../context/SearchContext'
 import FilterComponent from '../components/transactions/FilterComponent';
-import { createQuery, updateQuery, readQuery } from '../axios/AxiosFunctions';
-import Axios from '../axios/Axios';
+import { readQuery } from '../axios/AxiosFunctions';
 
 export default function debtHome() {
   const { pageType, setPageType } = useContext(PageTypeContext);
@@ -19,10 +18,11 @@ export default function debtHome() {
 
   // //get the unpaid debts
   useEffect(() => {
-    readQuery('debts')
-    .then(response => setDebts(response))
+    query.query==='' 
+      ? readQuery('debts').then(response => setDebts(response))
+      : readQuery('debts', query.query, 'userdebts').then(response => setDebts(response))
     setPageType('debts')
-}, [query])
+}, [query.query])
 
   return (
     <>

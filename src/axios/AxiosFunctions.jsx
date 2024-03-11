@@ -13,10 +13,12 @@ export const createQuery = (table, object) => {
         })
 }
 
-export const readQuery = (table, filter) => {
+export const readQuery = (table, filter, userIsolate) => {
     console.log(`Reading JSON Data`)
     const axdebts = filter 
-    ? `http://localhost:8063/api/${table}/${filter}` 
+    ? userIsolate
+        ? `http://localhost:8063/api/${table}/${userIsolate}/${filter}` 
+        : `http://localhost:8063/api/${table}/${filter}`
     : `http://localhost:8063/api/${table}/`
     return axios.get(axdebts)
         .then(response => { 
