@@ -42,11 +42,10 @@ export const updateQuery = (table, object) => {
          })
 }
 
-export const deleteQuery = (userID, debtID, amount, table) => {
-    const pay = { 'userID': userID, 'debtID': debtID, 'amount': amount }
-    console.log(pay, 'delete')
-    const axdebts = `http://localhost:8063/api/${table}/create`
-    return axios.put(axdebts, pay)
+export const deleteQuery = (table, filter) => {
+    console.log(filter, 'delete')
+    const axdebts = `http://localhost:8063/api/${table}/delete/${filter}`
+    return axios.delete(axdebts)
         .then(response => { 
             console.log(response.data.data);
          })
