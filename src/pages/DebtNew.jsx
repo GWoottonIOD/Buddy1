@@ -1,22 +1,22 @@
-import React from 'react'
-import { useEffect, useState, useContext } from 'react'
-import axios from 'axios'
-import { Button, TextField, Box } from '@mui/material'
-import { LocalizationProvider } from '@mui/x-date-pickers';
-import { AdapterDayjs } from '@mui/x-date-pickers/AdapterDayjs'
-import { DatePicker } from '@mui/x-date-pickers/DatePicker';
+import React, { useState, useEffect } from 'react'
+import { Box } from '@mui/material'
 import { useNavigate } from "react-router-dom";
-import { UsersContext } from '../context/UserContext';
-import dayjs from 'dayjs'; // Import Day.js
-import { Troubleshoot } from '@mui/icons-material';
-import Axios from '../axios/Axios';
 import GetUser from '../components/newTransaction/GetUser';
-import GetUsers from '../components/newTransaction/GetUsers';
+import { readQuery } from '../axios/AxiosFunctions'; 
+import Inputs from '../components/newTransaction/Inputs';
 
 export const DebtNew = () => {
     const currentUserString = localStorage.getItem('currentUser');
     const currentUser = JSON.parse(currentUserString);
+    const [userId, setUserId] = useState(null);
+    const [users, setUsers] = useState([]);
+    const [user, setUser] = useState(false);
     let navigate = useNavigate();
+
+    useEffect(() => {
+        readQuery('users')
+        .then(response => setUsers(response))
+      },[])
 
     //if a non user is trying to gain access, this will redirect them.
     const doNotProceed = () => {
@@ -25,6 +25,8 @@ export const DebtNew = () => {
         }
     }
     doNotProceed()
+
+    const userObj = users.find(user => user.id === userId);
 
     return (
 
@@ -37,7 +39,11 @@ export const DebtNew = () => {
                 }}
             ></Box>
             <form>
-                <GetUsers />
+                <div>{user?userObj.name:"Add a transaction"}</div>
+                <br/>
+                {users.length!==0?<GetUser setUser={setUser} users={users} setUserId={setUserId}/>: null}
+                <br/>
+                {user?<Inputs user={user} userId={userId}/>: null}
             </form>
         </div>
     )

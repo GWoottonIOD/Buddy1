@@ -1,7 +1,6 @@
 import * as React from 'react';
 import { CssBaseline, Container } from '@mui/material';
 import { useEffect, useContext } from 'react';
-import { useAxios } from '../hooks/useAxios';
 import { DebtContext } from '../context/DebtContext';
 import { PageTypeContext } from '../context/PageTypeContext'
 import { SearchContext } from '../context/SearchContext'

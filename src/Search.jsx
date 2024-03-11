@@ -1,33 +1,32 @@
 import React from 'react'
 import { useState, useEffect, useContext } from 'react'
 import {TextField, Button} from '@mui/material';
-import {DebtContext} from './context/DebtContext'
-import {PageTypeContext} from './context/PageTypeContext'
-import {UsersContext} from './context/UserContext'
 import {SearchContext} from './context/SearchContext'
 import SearchIcon from '@mui/icons-material/Search';
-import Axios from './axios/Axios';
+import {readQuery} from './axios/AxiosFunctions'
+import GetUser from './components/newTransaction/GetUser';
 
 export default function DebtSearch(props) {
-  let [textField, setTextField] = useState('')
+  const [userId, setUserId] = useState(null);
+  const [users, setUsers] = useState([]);
   const {query, setQuery} = useContext(SearchContext);
 
-  // useEffect(() => {
-  //   setQuery({query: null, doISearch: query.doISearch})
-  // },[query.query])
-  
-  //if the textfield is empty and button is pushed, reloads the screen. if not, sets the query with input.
-  const setTheQuery = () => {
-    setQuery({query: textField, doISearch: query.doISearch})
+  useEffect(() => {
+    readQuery('users').then(response => setUsers(response))
+  },[])
+
+  const setTheQuery = (id) => {
+    setQuery({query: id, doISearch: query.doISearch})
   }
 
   return (
       <div>
-        <TextField InputLabelProps={{style: { color: '#4A8E51', borderColor: '#4A8E51'}}}  
-        label="search" variant='filled' type="text" value={textField} onChange={(e)=>setTextField(e.target.value)}/>
-        <Button id="searchButton" size="small" onClick={()=>setTheQuery()} sx={{'&&:focus': {outline: 'none'}}}>
+        {users.length!==0?<GetUser users={users} setUserId={setUserId} setTheQuery={setTheQuery}/>: null}
+        {/* <TextField InputLabelProps={{style: { color: '#4A8E51', borderColor: '#4A8E51'}}}  
+        label="search" variant='filled' type="text" value={textField} onChange={(e)=>setTextField(e.target.value)}/> */}
+        {/* <Button id="searchButton" size="small" onClick={()=>setTheQuery()} sx={{'&&:focus': {outline: 'none'}}}>
           <SearchIcon sx={{ mr: 2 }} />
-        </Button>
+        </Button> */}
       </div>
       
   )
