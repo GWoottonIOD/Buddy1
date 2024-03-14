@@ -6,8 +6,8 @@ import { PageTypeContext } from '../context/PageTypeContext'
 import { SearchContext } from '../context/SearchContext'
 import { useNavigate } from "react-router-dom";
 import UserComponent from '../components/users/UserComponent';
-import Axios from '../axios/Axios';
 import { UsersContext } from '../context/UserContext';
+import { readQuery } from '../axios/AxiosFunctions'; 
 
 export default function debtHome() {
   const { pageType, setPageType } = useContext(PageTypeContext);
@@ -19,10 +19,10 @@ export default function debtHome() {
   const currentUser = JSON.parse(currentUserString);
   let navigate = useNavigate();
 
-  // //get the debts
   useEffect(() => {
-    setPageType('users')
-}, [])
+    readQuery('users')
+    .then(response => setUsers(response))
+  },[])
   
   //if non user clicks delete, redirect to pna
   const doNotProceed = () => {
@@ -37,7 +37,7 @@ export default function debtHome() {
     <>
       <CssBaseline />
       <main>
-        {users && query.doISearch===false?<Axios setResponse={setUsers} call={'get'} type={'users'}/>:null}
+        {/* {users && query.doISearch===false?<Axios setResponse={setUsers} call={'get'} type={'users'}/>:null} */}
         <Container sx={{ py: 8 }} maxWidth="md">
           {/* End hero unit */}
           <UserComponent users={users} currentUser={currentUser}/>

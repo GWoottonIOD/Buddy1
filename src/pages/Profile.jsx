@@ -1,10 +1,10 @@
 import React from 'react'
 import { useEffect, useState } from 'react'
 import axios from 'axios'
-import { Button, TextField, Box } from '@mui/material'
+import { Button, Box } from '@mui/material'
 import { useNavigate } from "react-router-dom";
 import Page from '../components/profile/Page';
-import Axios from '../axios/Axios';
+// import Axios from '../axios/Axios';
 
 export default function Profile() {
   let navigate = useNavigate();
@@ -58,7 +58,7 @@ export default function Profile() {
           pb: 4,
         }}
       >
-        {count === 0 ? <Axios call={'get'} type={'users'} id={currentUser.id} onChange={() => setCount(1)}/> : null}
+        {/* {count === 0 ? <Axios call={'get'} type={'users'} id={currentUser.id} onChange={() => setCount(1)}/> : null} */}
         <Button onClick={loggingOff}>Log out</Button>
         <Page currentUser={currentUser} />
       </Box>
