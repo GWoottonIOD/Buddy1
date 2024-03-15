@@ -1,15 +1,16 @@
-import React, {useState} from 'react'
+import React, { useState, useContext } from 'react'
 import { Button, TextField } from '@mui/material'
-import { updateQuery } from '../../axios/AxiosFunctions';
+import { updateQuery, readQuery } from '../../axios/AxiosFunctions';
 import { useNavigate } from 'react-router-dom';
+import { CurrentUserContext } from '../../context/CurrentUserContext';
 
 export default function Page(props) {
+  const { setCurrentUser } = useContext(CurrentUserContext)
     const [name, setName] = useState(props.currentUser.name)
     const [username, setUsername] = useState(props.currentUser.username)
     const [password, setPassword] = useState('')
     const [vPassword, setVPassword] = useState(null)
     const navigate = useNavigate()
-
     const currentUser = props.currentUser
     const updateUser = { id: currentUser.id, name: name, username: username, password: password }
 
@@ -34,7 +35,11 @@ export default function Page(props) {
                   label="Verify Password"></TextField>
                 </div><br/>
                 <Button onClick={password === vPassword 
-                  ? updateQuery('users', updateUser).then(() => navigate('/users')) 
+                  ? () => updateQuery('users', updateUser)
+                    .then(() => readQuery('users', currentUser.id))
+                    .then((response) => {setCurrentUser(response[0]);
+                    localStorage.setItem("currentUser", JSON.stringify(response[0]))})
+                    .then(() => navigate('/users')) 
                   : () => alert('These passwords do not match.')}>Update</Button>
               </form>
             </>
