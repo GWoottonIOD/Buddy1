@@ -1,7 +1,6 @@
 import React from 'react'
 import { useParams } from 'react-router-dom'
 import { useEffect, useState } from 'react'
-import axios from 'axios'
 import { Button, TextField, Typography, Box } from '@mui/material'
 import { useNavigate } from "react-router-dom";
 import { readQuery, updateQuery } from '../axios/AxiosFunctions';
@@ -17,18 +16,15 @@ export const UserInfoEdit = () => {
     const [vPassword, setVPassword] = useState('')
     const [total, setTotal] = useState(user.total)
 
+    const params = useParams();
+    const userid = params.id
+
     useEffect(() => {
         readQuery('users', userid)
         .then(response => {
             setUser(response[0])
-            setName(response[0].name)
-            setUsername(response[0].username)
-            setPassword(response[0].password)
-            setTotal(response[0].total)})
-      },[])
-
-    const params = useParams();
-    const userid = params.id
+        })
+      },[userid])
 
     let navigate = useNavigate();
 
@@ -41,8 +37,9 @@ export const UserInfoEdit = () => {
     //description field - make more user friendly
     doNotProceed()
 
-    const updateUser = { 'name': name, 'total': total, 'username': username, 'password': password }
-    console.log(name)
+    const updateUser = {id: userid, name: name, total: total, username: username, password: password }
+
+
 return (
     <div className="userInfo">
         {userid ?
