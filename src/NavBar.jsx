@@ -6,8 +6,10 @@ import ClearIcon from '@mui/icons-material/Clear';
 import Search from './Search';
 import { PageTypeContext } from './context/PageTypeContext';
 import { SearchContext } from './context/SearchContext';
+import { useCurrentUserContext } from './context/CurrentUserContext';
 
 const Navbar = () => {
+  const { currentUser } = useCurrentUserContext()
   const {pageType} = useContext(PageTypeContext)
   const {setQuery, query} = useContext(SearchContext)
   const location = useLocation();
@@ -17,9 +19,6 @@ const Navbar = () => {
   const clear = <NavLink onClick={() => setQuery({query: '', doISearch: !query.doISearch})} outline='none' ><ClearIcon id="link" sx={{ mr: 2 }} /></NavLink>
   const search = <NavLink onClick={() => setQuery({query: query.query, doISearch: !query.doISearch})} outline='none' ><SearchIcon id="link" sx={{ mr: 2 }} /></NavLink>
 
-  //gets the logged in user
-  const currentUserString = localStorage.getItem('currentUser');
-  const currentUser = JSON.parse(currentUserString);
   const pathname = location.pathname
   const [doISearch, setDoISearch] = useState(false)
 

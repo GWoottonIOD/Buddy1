@@ -6,14 +6,14 @@ import { PageTypeContext } from '../context/PageTypeContext'
 import { SearchContext } from '../context/SearchContext'
 import FilterComponent from '../components/transactions/FilterComponent';
 import { readQuery } from '../axios/AxiosFunctions';
+import { useCurrentUserContext } from '../context/CurrentUserContext';
 
 export default function debtHome() {
   const { pageType, setPageType } = useContext(PageTypeContext);
+  const { currentUser } = useCurrentUserContext()
   const { debts, setDebts } = useContext(DebtContext);
   const { query } = useContext(SearchContext);
   // const debtsPerPage = 6;
-  const currentUserString = localStorage.getItem('currentUser');
-  const currentUser = JSON.parse(currentUserString);
 
   // //get the unpaid debts
   useEffect(() => {

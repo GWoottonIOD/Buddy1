@@ -1,11 +1,11 @@
 import React from "react";
-import { useState, useContext } from "react";
+import { useState } from "react";
 import { TextField, Button, Box } from "@mui/material";
 import { useNavigate } from "react-router-dom";
-import { CurrentUserContext } from "../context/CurrentUserContext";
+import { useCurrentUserContext } from "../context/CurrentUserContext";
 import axios from "axios";
 export default function NewLogin() {
-  let { currentUser, setCurrentUser } = useContext(CurrentUserContext)
+  const { handleUser } = useCurrentUserContext()
   const navigate = useNavigate()
   const [LUserName, setLUserName] = useState("");
   const [LPassWord, setLPassWord] = useState("");
@@ -24,8 +24,7 @@ export default function NewLogin() {
       const user = response.data.data.user
       if (user.username === username) {
         console.log(user)
-        setCurrentUser(user);
-        localStorage.setItem("currentUser", JSON.stringify(user));
+        handleUser(user);
       } else { alert("Incorrect username or password") }
       
       navigate("/");

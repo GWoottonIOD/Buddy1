@@ -4,10 +4,10 @@ import { useNavigate } from "react-router-dom";
 import GetUser from '../components/newTransaction/GetUser';
 import { readQuery } from '../axios/AxiosFunctions'; 
 import Inputs from '../components/newTransaction/Inputs';
+import { useCurrentUserContext } from '../context/CurrentUserContext';
 
 export const UserNew = () => {
-    const currentUserString = localStorage.getItem('currentUser');
-    const currentUser = JSON.parse(currentUserString);
+    const { currentUser } = useCurrentUserContext()
     const [user, setUser] = useState(false);
     let navigate = useNavigate();
 

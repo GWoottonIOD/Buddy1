@@ -8,15 +8,14 @@ import { useNavigate } from "react-router-dom";
 import UserComponent from '../components/users/UserComponent';
 import { UsersContext } from '../context/UserContext';
 import { readQuery } from '../axios/AxiosFunctions'; 
+import { useCurrentUserContext } from '../context/CurrentUserContext';
 
 export default function debtHome() {
+  const { currentUser } = useCurrentUserContext()
   const { pageType, setPageType } = useContext(PageTypeContext);
   const { users, setUsers } = useContext(UsersContext);
   const { query } = useContext(SearchContext);
-  // const [state, dispatch] = useLogic()
   // const debtsPerPage = 6;
-  const currentUserString = localStorage.getItem('currentUser');
-  const currentUser = JSON.parse(currentUserString);
   let navigate = useNavigate();
 
   useEffect(() => {

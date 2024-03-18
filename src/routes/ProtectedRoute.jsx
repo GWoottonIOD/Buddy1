@@ -1,9 +1,9 @@
 import { Outlet, Navigate } from "react-router-dom";
+import { useCurrentUserContext } from "../context/CurrentUserContext";
 
 // wrap around logged-in user only routes to protect them
 function ProtectedRoute({ redirectPath = "/pna", children }) {
-    const currentUserString = localStorage.getItem('currentUser');
-    const currentUser = JSON.parse(currentUserString);
+  const { currentUser } = useCurrentUserContext()
 
   if (!currentUser) {
     return <Navigate to={redirectPath} replace />;

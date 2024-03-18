@@ -4,11 +4,10 @@ import { useEffect, useState } from 'react'
 import { Button, TextField, Typography, Box } from '@mui/material'
 import { useNavigate } from "react-router-dom";
 import { readQuery, updateQuery } from '../axios/AxiosFunctions';
-
+import { useCurrentUserContext } from '../context/CurrentUserContext';
 
 export const UserInfoEdit = () => {
-    const currentUserString = localStorage.getItem('currentUser');
-    const currentUser = JSON.parse(currentUserString);
+    const { currentUser } = useCurrentUserContext()
     const [user, setUser] = useState({});
     const [name, setName] = useState(user.name)
     const [username, setUsername] = useState(user.username)

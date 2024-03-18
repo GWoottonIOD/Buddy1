@@ -1,10 +1,12 @@
 import React, { useEffect, useState } from 'react';
 import { Box, Button, TextField } from '@mui/material';
 import io from 'socket.io-client';
+import { useCurrentUserContext } from '../context/CurrentUserContext';
 
 const socket = io('http://localhost:3001'); // Replace with your server URL
 
 function ChatApp() {
+  const { currentUser } = useCurrentUserContext()
   const [messages, setMessages] = useState([]);
   const [onlineUsers, setOnlineUsers] = useState([]);
   const [newMessage, setNewMessage] = useState('');

@@ -4,14 +4,12 @@ import { Button, Box } from '@mui/material'
 import { useNavigate } from "react-router-dom";
 import Page from '../components/profile/Page';
 import { readQuery } from '../axios/AxiosFunctions';
+import { useCurrentUserContext } from '../context/CurrentUserContext';
 
 export default function Profile() {
   let navigate = useNavigate();
   const [user, setUser] = useState({})
-
-  const currentUserString = localStorage.getItem('currentUser');
-  const currentUser = JSON.parse(currentUserString);
-  // state and useeffect
+  const { currentUser, handleUser } = useCurrentUserContext()
 
   //gets user profile
   useEffect(() => {
@@ -23,7 +21,7 @@ export default function Profile() {
 
   // logs user out
   const loggingOff = () => {
-    localStorage.removeItem('currentUser');
+    handleUser({})
     navigate('/login');
   }
   return (
