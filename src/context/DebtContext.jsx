@@ -18,6 +18,6 @@ export const DebtContextHolder = (props) => {
     );
 }
 
-// export const useUserContext = () => {
-//     return useContext(UserContext);
-//     }
+export const useDebtContext = () => {
+    return useContext(DebtContext);
+  };

@@ -12,6 +12,7 @@ import { UserInfoEdit } from '../pages/UserInfoEdit';
 import ChatApp from '../pages/Chat';
 import ProtectedRoute from './ProtectedRoute';
 import SeedFlower from '../pages/SeedFlower';
+import { NewUser } from '../pages/UserNew';
 
 
 export default function AppRoutes() {
@@ -23,6 +24,7 @@ export default function AppRoutes() {
                 <Route path='/login' element={<Theme component={<NewLogin />} />} />
                 <Route path='/debtnew' element={<ProtectedRoute><Theme component={<DebtNew />} /></ProtectedRoute>} />
                 <Route path='/users' element={<ProtectedRoute><Theme component={<Users />} /></ProtectedRoute>} />
+                <Route path='/newuser' element={<ProtectedRoute><Theme component={<NewUser />} /></ProtectedRoute>} />
                 <Route path='/userinfo' >
                     <Route path=':id' element={<ProtectedRoute><Theme component={<UserInfoEdit />} /></ProtectedRoute>} />
                 </Route>

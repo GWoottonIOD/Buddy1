@@ -26,7 +26,7 @@ export default function UserComponent(props) {
             color="text.primary"
             gutterBottom
           >
-            {currentUser && currentUser.UserAdmin ? <Button variant='outlined' size="small" href={"/usernew/"}>Add a user</Button> : null}
+            {currentUser && currentUser.UserAdmin ? <Button variant='outlined' size="small" href={"/newuser/"}>Add a user</Button> : null}
           </Typography>
           <UserMapComponent users={users} currentUser={currentUser} />
         </Container>

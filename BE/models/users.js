@@ -19,7 +19,7 @@ Users.init({
         type: DataTypes.INTEGER, allowNull: true, required: true,
     },
     username: {
-        type: DataTypes.STRING, allowNull: false, required: true,
+        type: DataTypes.STRING, allowNull: false, required: true, unique: true
     },
     password: {
         type: DataTypes.STRING, allowNull: false, required: true,

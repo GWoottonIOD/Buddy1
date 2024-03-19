@@ -17,3 +17,7 @@ export const PageTypeHolder = (props) => {
         </PageTypeContext.Provider>
     );
 }
+
+export const usePageTypeContext = () => {
+    return useContext(PageTypeContext);
+  };

@@ -16,27 +16,16 @@ export default function debtHome() {
   const { users, setUsers } = useContext(UsersContext);
   const { query } = useContext(SearchContext);
   // const debtsPerPage = 6;
-  let navigate = useNavigate();
 
   useEffect(() => {
     readQuery('users')
     .then(response => setUsers(response))
   },[])
-  
-  //if non user clicks delete, redirect to pna
-  const doNotProceed = () => {
-    if (currentUser === null) {
-      navigate('/pna');
-    }
-  }
-  //call the function
-  doNotProceed()
 
   return (
     <>
       <CssBaseline />
       <main>
-        {/* {users && query.doISearch===false?<Axios setResponse={setUsers} call={'get'} type={'users'}/>:null} */}
         <Container sx={{ py: 8 }} maxWidth="md">
           {/* End hero unit */}
           <UserComponent users={users} currentUser={currentUser}/>
