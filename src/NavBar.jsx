@@ -1,4 +1,4 @@
-import { React, useState, useContext, useEffect } from 'react'
+import { React, useContext } from 'react'
 import { NavLink, useLocation } from 'react-router-dom'
 import { AppBar, Toolbar, Typography, Button } from '@mui/material'
 import SearchIcon from '@mui/icons-material/Search';
@@ -20,26 +20,21 @@ const Navbar = () => {
   const search = <NavLink onClick={() => setQuery({query: query.query, doISearch: !query.doISearch})} outline='none' ><SearchIcon id="link" sx={{ mr: 2 }} /></NavLink>
 
   const pathname = location.pathname
-  const [doISearch, setDoISearch] = useState(false)
-
-  // useEffect(()=> {
-  //   setQuery({query: query.query, doISearch: false})
-  // }, [pageType])
   
   return (
     <>
       <AppBar position="sticky" className='AppBar' sx={{ backgroundColor: '#4A8E51' }}>
         <Toolbar id="tool">
           <Typography variant="h6" color="inherit" noWrap id="toolItems">
-            {currentUser && currentUser.UserAdmin && pathname !== '/users' ? users : null}
-            {currentUser && pathname !== '/' ? debts : null}
-            {pathname == '/profile' || pathname == '/login'? null : <>{currentUser?<NavLink id="link" to='/profile'>{currentUser.username}</NavLink>: null}</> }
-            {currentUser? chats: null}
-            {query.doISearch ? clear : search}
+            {currentUser.username && currentUser.UserAdmin && pathname !== '/users' ? users : null}
+            {currentUser.username && pathname !== '/' ? debts : null}
+            {pathname == '/profile' || pathname == '/login'? null : <>{currentUser.username?<NavLink id="link" to='/profile'>{currentUser.username}</NavLink>: null}</> }
+            {currentUser.username ? chats: null}
+            {currentUser.username && currentUser.UserAdmin ? query.doISearch ? clear : search : 'Welcome'}
           </Typography>
         </Toolbar>
         <Typography variant="h6" id="toolSearch">
-          {currentUser && currentUser.UserAdmin && query.doISearch ? <Search id="link" /> : null}
+          {currentUser.username && currentUser.UserAdmin && query.doISearch ? <Search id="link" /> : null}
         </Typography>
       </AppBar>
     </>
