@@ -15,7 +15,6 @@ export default function NewLogin() {
   const handleLogin = async () => {
     const username = LUserName;
     const password = LPassWord;
-    console.log(username)
     try {
       const response = await axios.post(
         "http://localhost:8063/api/users/login",
@@ -23,7 +22,6 @@ export default function NewLogin() {
       );
       const user = response.data.data.user
       if (user.username === username) {
-        console.log({...user, rememberMe: rememberMe})
         handleUser(user);
       } else { setValidateMsg("Incorrect username or password") }
       
@@ -39,11 +37,11 @@ export default function NewLogin() {
       <Box
         sx={{
           bgcolor: 'background.paper',
-          pt: 35,
+          pt: 20,
           pb: 4,
         }}
       >
-        {validateMsg}
+        {validateMsg}<br />
         <div>
           <TextField type='text' onChange={e => setLUserName(e.target.value)}
             label="Username">
