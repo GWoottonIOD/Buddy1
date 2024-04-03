@@ -22,11 +22,6 @@ export default function DebtSearch(props) {
   return (
       <div>
         {users.length!==0?<GetUser users={users} setUserId={setUserId} setTheQuery={setTheQuery}/>: null}
-        {/* <TextField InputLabelProps={{style: { color: '#4A8E51', borderColor: '#4A8E51'}}}  
-        label="search" variant='filled' type="text" value={textField} onChange={(e)=>setTextField(e.target.value)}/> */}
-        {/* <Button id="searchButton" size="small" onClick={()=>setTheQuery()} sx={{'&&:focus': {outline: 'none'}}}>
-          <SearchIcon sx={{ mr: 2 }} />
-        </Button> */}
       </div>
       
   )

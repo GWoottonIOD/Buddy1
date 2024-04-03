@@ -5,6 +5,7 @@ import Draggable from 'react-draggable';
 import DateChange from '../newTransaction/DateChange';
 import { DebtContext } from '../../context/DebtContext';
 import { createQuery, updateQuery, readQuery } from '../../axios/AxiosFunctions';
+import { useSearchContext } from '../../context/SearchContext';
 
 function PaperComponent(props) {
   return (
@@ -20,7 +21,8 @@ function PaperComponent(props) {
 export default function DraggableDialog(props) {
   const [open, setOpen] = useState(props.edit);
   const [dueDate, setDueDate] = useState(props.debt.duedate);
-  const { setDebts } = useContext(DebtContext);
+  const { debts, setDebts } = useContext(DebtContext);
+  const { query } = useSearchContext()
   const payment = { userID: props.debt.userID, debtID: props.debt.id, amount: props.amount }
   const debt = { id: props.debt.id, amount: props.debt.amount - props.amount, paid: props.debt.amount === props.amount? true : false }
 
@@ -58,7 +60,9 @@ export default function DraggableDialog(props) {
             .then(()=> readQuery('users', props.debt.userID))
             .then(response=> updateQuery('users', 
               {id: props.debt.userID, total: response[0].total - props.amount}))
-            .then(()=> readQuery('debts'))
+            .then(()=> query.query === ''
+              ? readQuery('debts')
+              : readQuery('debts', props.debt.userID, 'userdebts'))
             .then((response)=> setDebts(response))
             .then(handleClose) 
           }
