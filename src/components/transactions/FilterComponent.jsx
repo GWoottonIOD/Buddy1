@@ -67,7 +67,7 @@ export default function FilterComponent(props) {
             <div><Button variant="outlined" id="buttonWhite" size="small"><RefreshIcon onClick={() => window.location.reload()} /></Button></div>
           </Typography>
           <Box sx={{ bgcolor: 'background.paper', p: 6 }} component="footer"></Box>
-          <HomeMapComponent debts={filter} currentUser={currentUser} paid={isPaid} />
+          <HomeMapComponent debts={filter} currentUser={currentUser} paid={isPaid} users={props.users}/>
         </Container>
       </main>
         <Typography variant="h6" align="center" gutterBottom>

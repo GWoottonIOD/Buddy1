@@ -18,7 +18,7 @@ export default function HomeMapComponent(props) {
                             <CardContent sx={{ flexGrow: 2 }}>
                                 {props.currentUser && props.currentUser.UserAdmin ?
                                     <Typography gutterBottom variant="h5" component="h2" className='capitalise'>
-                                        {debt.userID}
+                                        {props.users.filter((user) => user.id === debt.userID)[0].name}
                                     </Typography> : null}
                                 <Typography>
                                     ${debt.amount}
