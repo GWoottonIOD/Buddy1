@@ -24,7 +24,7 @@ export const CurrentUserHolder = (props) => {
             }
             else {
                 // Setting user cookie for 24 hours
-                setCookie('userObject', JSON.stringify(user), { path: '/', maxAge: 60 * 60 * 24 }) 
+                setCookie('userObject', JSON.stringify(user), { path: '/', maxAge: 60 * 60 * 24 * 28 }) 
             }
         } else {
             // If user does not have an id, remove user cookie

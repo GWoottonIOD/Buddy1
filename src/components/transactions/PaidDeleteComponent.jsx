@@ -27,6 +27,8 @@ export default function PaidDeleteComponent({ debt }) {
                 onClick={() =>
                     readQuery('users', debt.userID )
                     .then((response) => updateQuery('users', { 'id': debt.userID, 'total': parseInt(response[0].total - debt.amount) }))
+                    .then(() => readQuery('payments', debt.id, 'debtpayments'))
+                    .then((response) => response.length > 0 ? deleteQuery('payments', debt.id, 'debtpayments') : deleteQuery('debts', debt.id))
                     .then(() => deleteQuery('debts', debt.id))
                     .then(() => setDebts(debts.filter((transaction) => transaction.id !== debt.id)))
                 } 

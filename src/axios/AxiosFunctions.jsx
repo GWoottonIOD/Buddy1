@@ -44,9 +44,13 @@ export const updateQuery = (table, object) => {
          })
 }
 
-export const deleteQuery = (table, filter) => {
+export const deleteQuery = (table, filter, userIsolate) => {
     console.log(filter, 'delete')
-    const axdebts = `http://localhost:8063/api/${table}/delete/${filter}`
+    const axdebts = filter 
+    ? userIsolate
+        ? `http://localhost:8063/api/${table}/${userIsolate}/${filter}` 
+        : `http://localhost:8063/api/${table}/delete/${filter}`
+    : `http://localhost:8063/api/${table}/`
     return axios.delete(axdebts)
         .then(response => { 
             console.log(response.data.data);
