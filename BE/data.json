@@ -1,0 +1,2460 @@
+{
+    "Debts": [
+        {
+            "id": 1,
+            "userID": 3,
+            "duedate": "2024-04-18T00:00:00.000Z",
+            "total": 340,
+            "paid": true,
+            "amount": 260,
+            "createdAt": "2024-02-22T02:39:10.000Z",
+            "updatedAt": "2024-08-05T11:29:57.000Z"
+        },
+        {
+            "id": 2,
+            "userID": 3,
+            "duedate": "2024-06-29T02:44:07.000Z",
+            "total": 760,
+            "paid": true,
+            "amount": 100,
+            "createdAt": "2024-02-22T02:40:18.000Z",
+            "updatedAt": "2024-08-05T11:29:57.000Z"
+        },
+        {
+            "id": 3,
+            "userID": 3,
+            "duedate": "2024-07-18T00:00:00.000Z",
+            "total": 880,
+            "paid": true,
+            "amount": 120,
+            "createdAt": "2024-02-22T02:40:32.000Z",
+            "updatedAt": "2024-08-05T11:29:57.000Z"
+        },
+        {
+            "id": 5,
+            "userID": 6,
+            "duedate": "2024-02-29T02:41:54.000Z",
+            "total": 60,
+            "paid": true,
+            "amount": 0,
+            "createdAt": "2024-02-22T02:41:58.000Z",
+            "updatedAt": "2024-08-05T11:29:57.000Z"
+        },
+        {
+            "id": 6,
+            "userID": 4,
+            "duedate": "2024-02-29T02:42:17.000Z",
+            "total": 250,
+            "paid": true,
+            "amount": 250,
+            "createdAt": "2024-02-22T02:42:19.000Z",
+            "updatedAt": "2024-08-05T11:29:57.000Z"
+        },
+        {
+            "id": 7,
+            "userID": 3,
+            "duedate": "2024-09-27T00:00:00.000Z",
+            "total": 1300,
+            "paid": true,
+            "amount": 12,
+            "createdAt": "2024-02-22T02:42:39.000Z",
+            "updatedAt": "2024-08-05T11:29:57.000Z"
+        },
+        {
+            "id": 8,
+            "userID": 8,
+            "duedate": "2024-05-29T02:43:00.000Z",
+            "total": 80,
+            "paid": true,
+            "amount": 20,
+            "createdAt": "2024-02-22T02:43:04.000Z",
+            "updatedAt": "2024-08-05T11:29:57.000Z"
+        },
+        {
+            "id": 9,
+            "userID": 2,
+            "duedate": "2024-02-29T02:43:45.000Z",
+            "total": 70,
+            "paid": true,
+            "amount": 70,
+            "createdAt": "2024-02-22T02:43:53.000Z",
+            "updatedAt": "2024-08-05T11:29:57.000Z"
+        },
+        {
+            "id": 10,
+            "userID": 2,
+            "duedate": "2024-03-29T02:44:07.000Z",
+            "total": 120,
+            "paid": true,
+            "amount": 40,
+            "createdAt": "2024-02-22T02:44:09.000Z",
+            "updatedAt": "2024-08-05T11:29:57.000Z"
+        },
+        {
+            "id": 11,
+            "userID": 2,
+            "duedate": "2024-03-01T03:21:42.000Z",
+            "total": 240,
+            "paid": true,
+            "amount": 120,
+            "createdAt": "2024-02-23T03:21:44.000Z",
+            "updatedAt": "2024-08-05T11:29:57.000Z"
+        },
+        {
+            "id": 12,
+            "userID": 8,
+            "duedate": "2024-03-01T03:21:54.000Z",
+            "total": 50,
+            "paid": true,
+            "amount": 50,
+            "createdAt": "2024-02-23T03:21:56.000Z",
+            "updatedAt": "2024-08-05T11:29:57.000Z"
+        },
+        {
+            "id": 14,
+            "userID": 5,
+            "duedate": "2024-03-15T23:38:00.000Z",
+            "total": 40,
+            "paid": true,
+            "amount": 40,
+            "createdAt": "2024-02-29T05:12:13.000Z",
+            "updatedAt": "2024-08-05T11:29:57.000Z"
+        },
+        {
+            "id": 16,
+            "userID": 7,
+            "duedate": "2024-03-20T03:44:30.000Z",
+            "total": 120,
+            "paid": true,
+            "amount": 120,
+            "createdAt": "2024-03-02T07:29:03.000Z",
+            "updatedAt": "2024-08-05T11:29:57.000Z"
+        },
+        {
+            "id": 17,
+            "userID": 11,
+            "duedate": "2024-03-09T07:30:17.000Z",
+            "total": 120,
+            "paid": true,
+            "amount": 120,
+            "createdAt": "2024-03-02T07:30:18.000Z",
+            "updatedAt": "2024-08-05T11:29:57.000Z"
+        },
+        {
+            "id": 18,
+            "userID": 2,
+            "duedate": "2024-03-11T04:11:54.000Z",
+            "total": 90,
+            "paid": true,
+            "amount": 50,
+            "createdAt": "2024-03-04T04:11:56.000Z",
+            "updatedAt": "2024-08-05T11:29:57.000Z"
+        },
+        {
+            "id": 26,
+            "userID": 2,
+            "duedate": "2024-03-12T05:49:47.000Z",
+            "total": 90,
+            "paid": true,
+            "amount": 50,
+            "createdAt": "2024-03-05T05:49:49.000Z",
+            "updatedAt": "2024-08-05T11:29:57.000Z"
+        },
+        {
+            "id": 28,
+            "userID": 10,
+            "duedate": "2024-03-13T22:46:02.000Z",
+            "total": -30,
+            "paid": true,
+            "amount": 50,
+            "createdAt": "2024-03-06T22:46:03.000Z",
+            "updatedAt": "2024-08-05T11:29:57.000Z"
+        },
+        {
+            "id": 29,
+            "userID": 4,
+            "duedate": "2024-03-13T23:28:23.000Z",
+            "total": 375,
+            "paid": true,
+            "amount": 375,
+            "createdAt": "2024-03-06T23:28:25.000Z",
+            "updatedAt": "2024-08-05T11:29:57.000Z"
+        },
+        {
+            "id": 30,
+            "userID": 5,
+            "duedate": "2024-03-25T00:41:52.000Z",
+            "total": 160,
+            "paid": true,
+            "amount": 50,
+            "createdAt": "2024-03-08T22:01:44.000Z",
+            "updatedAt": "2024-08-05T11:29:57.000Z"
+        },
+        {
+            "id": 31,
+            "userID": 2,
+            "duedate": "2024-03-15T22:02:31.000Z",
+            "total": 190,
+            "paid": true,
+            "amount": 50,
+            "createdAt": "2024-03-08T22:02:33.000Z",
+            "updatedAt": "2024-08-05T11:29:57.000Z"
+        },
+        {
+            "id": 32,
+            "userID": 2,
+            "duedate": "2024-03-25T00:42:02.000Z",
+            "total": 240,
+            "paid": true,
+            "amount": 40,
+            "createdAt": "2024-03-08T22:02:39.000Z",
+            "updatedAt": "2024-08-05T11:29:57.000Z"
+        },
+        {
+            "id": 33,
+            "userID": 2,
+            "duedate": "2024-03-25T00:42:06.000Z",
+            "total": 280,
+            "paid": true,
+            "amount": 50,
+            "createdAt": "2024-03-09T20:52:01.000Z",
+            "updatedAt": "2024-08-05T11:29:57.000Z"
+        },
+        {
+            "id": 34,
+            "userID": 2,
+            "duedate": "2024-03-26T09:36:47.000Z",
+            "total": 400,
+            "paid": true,
+            "amount": 120,
+            "createdAt": "2024-03-10T20:57:28.000Z",
+            "updatedAt": "2024-08-05T11:29:57.000Z"
+        },
+        {
+            "id": 35,
+            "userID": 10,
+            "duedate": "2024-03-18T05:24:20.000Z",
+            "total": 20,
+            "paid": true,
+            "amount": 20,
+            "createdAt": "2024-03-11T05:24:21.000Z",
+            "updatedAt": "2024-08-05T11:29:57.000Z"
+        },
+        {
+            "id": 36,
+            "userID": 10,
+            "duedate": "2024-03-18T05:27:40.000Z",
+            "total": 40,
+            "paid": true,
+            "amount": 20,
+            "createdAt": "2024-03-11T05:27:41.000Z",
+            "updatedAt": "2024-08-05T11:29:57.000Z"
+        },
+        {
+            "id": 39,
+            "userID": 4,
+            "duedate": "2024-03-19T05:46:18.000Z",
+            "total": 350,
+            "paid": true,
+            "amount": 350,
+            "createdAt": "2024-03-12T05:46:20.000Z",
+            "updatedAt": "2024-08-05T11:29:57.000Z"
+        },
+        {
+            "id": 40,
+            "userID": 2,
+            "duedate": "2024-03-19T21:56:24.000Z",
+            "total": 330,
+            "paid": true,
+            "amount": 120,
+            "createdAt": "2024-03-12T21:56:27.000Z",
+            "updatedAt": "2024-08-05T11:29:57.000Z"
+        },
+        {
+            "id": 44,
+            "userID": 7,
+            "duedate": "2024-03-21T21:49:19.000Z",
+            "total": 280,
+            "paid": true,
+            "amount": 280,
+            "createdAt": "2024-03-14T21:49:23.000Z",
+            "updatedAt": "2024-08-05T11:29:57.000Z"
+        },
+        {
+            "id": 45,
+            "userID": 2,
+            "duedate": "2024-03-22T06:46:30.000Z",
+            "total": 450,
+            "paid": true,
+            "amount": 100,
+            "createdAt": "2024-03-15T06:46:32.000Z",
+            "updatedAt": "2024-08-05T11:29:57.000Z"
+        },
+        {
+            "id": 46,
+            "userID": 5,
+            "duedate": "2024-04-04T21:02:44.000Z",
+            "total": 200,
+            "paid": true,
+            "amount": 60,
+            "createdAt": "2024-03-18T00:42:23.000Z",
+            "updatedAt": "2024-08-05T11:29:57.000Z"
+        },
+        {
+            "id": 47,
+            "userID": 8,
+            "duedate": "2024-03-25T21:52:25.000Z",
+            "total": 100,
+            "paid": true,
+            "amount": 10,
+            "createdAt": "2024-03-18T21:52:27.000Z",
+            "updatedAt": "2024-08-05T11:29:57.000Z"
+        },
+        {
+            "id": 48,
+            "userID": 8,
+            "duedate": "2024-03-26T09:36:21.000Z",
+            "total": 100,
+            "paid": true,
+            "amount": 50,
+            "createdAt": "2024-03-19T09:36:23.000Z",
+            "updatedAt": "2024-08-05T11:29:57.000Z"
+        },
+        {
+            "id": 49,
+            "userID": 3,
+            "duedate": "2024-03-27T02:26:24.000Z",
+            "total": 662,
+            "paid": true,
+            "amount": 6,
+            "createdAt": "2024-03-20T02:26:31.000Z",
+            "updatedAt": "2024-08-05T11:29:57.000Z"
+        },
+        {
+            "id": 50,
+            "userID": 4,
+            "duedate": "2024-03-27T10:01:53.000Z",
+            "total": 375,
+            "paid": true,
+            "amount": 5,
+            "createdAt": "2024-03-20T10:01:56.000Z",
+            "updatedAt": "2024-08-05T11:29:57.000Z"
+        },
+        {
+            "id": 51,
+            "userID": 8,
+            "duedate": "2024-04-01T08:07:51.000Z",
+            "total": 80,
+            "paid": true,
+            "amount": 50,
+            "createdAt": "2024-03-25T08:07:53.000Z",
+            "updatedAt": "2024-08-05T11:29:57.000Z"
+        },
+        {
+            "id": 52,
+            "userID": 5,
+            "duedate": "2024-04-02T04:32:08.000Z",
+            "total": 190,
+            "paid": true,
+            "amount": 20,
+            "createdAt": "2024-03-26T04:32:10.000Z",
+            "updatedAt": "2024-08-05T11:29:57.000Z"
+        },
+        {
+            "id": 53,
+            "userID": 2,
+            "duedate": "2024-04-04T21:39:44.000Z",
+            "total": 30,
+            "paid": true,
+            "amount": 30,
+            "createdAt": "2024-03-28T21:39:46.000Z",
+            "updatedAt": "2024-08-05T11:29:57.000Z"
+        },
+        {
+            "id": 54,
+            "userID": 2,
+            "duedate": "2024-04-06T07:15:52.000Z",
+            "total": 80,
+            "paid": true,
+            "amount": 50,
+            "createdAt": "2024-03-30T07:15:53.000Z",
+            "updatedAt": "2024-08-05T11:29:57.000Z"
+        },
+        {
+            "id": 55,
+            "userID": 15,
+            "duedate": "2024-04-06T21:02:22.000Z",
+            "total": 120,
+            "paid": true,
+            "amount": 120,
+            "createdAt": "2024-03-30T20:02:24.000Z",
+            "updatedAt": "2024-08-05T11:29:57.000Z"
+        },
+        {
+            "id": 56,
+            "userID": 8,
+            "duedate": "2024-04-07T05:26:41.000Z",
+            "total": 60,
+            "paid": true,
+            "amount": 50,
+            "createdAt": "2024-03-31T04:26:43.000Z",
+            "updatedAt": "2024-08-05T11:29:57.000Z"
+        },
+        {
+            "id": 57,
+            "userID": 2,
+            "duedate": "2024-04-08T20:00:58.000Z",
+            "total": 130,
+            "paid": true,
+            "amount": 50,
+            "createdAt": "2024-04-01T19:01:00.000Z",
+            "updatedAt": "2024-08-05T11:29:58.000Z"
+        },
+        {
+            "id": 58,
+            "userID": 2,
+            "duedate": "2024-04-08T21:25:02.000Z",
+            "total": 180,
+            "paid": true,
+            "amount": 50,
+            "createdAt": "2024-04-01T20:25:03.000Z",
+            "updatedAt": "2024-08-05T11:29:58.000Z"
+        },
+        {
+            "id": 59,
+            "userID": 10,
+            "duedate": "2024-04-10T23:40:31.000Z",
+            "total": 20,
+            "paid": true,
+            "amount": 20,
+            "createdAt": "2024-04-03T22:40:34.000Z",
+            "updatedAt": "2024-08-05T11:29:58.000Z"
+        },
+        {
+            "id": 60,
+            "userID": 10,
+            "duedate": "2024-04-10T23:40:43.000Z",
+            "total": 40,
+            "paid": true,
+            "amount": 20,
+            "createdAt": "2024-04-03T22:40:45.000Z",
+            "updatedAt": "2024-08-05T11:29:58.000Z"
+        },
+        {
+            "id": 61,
+            "userID": 10,
+            "duedate": "2024-04-10T23:42:39.000Z",
+            "total": 40,
+            "paid": true,
+            "amount": 20,
+            "createdAt": "2024-04-03T22:42:42.000Z",
+            "updatedAt": "2024-08-05T11:29:58.000Z"
+        },
+        {
+            "id": 62,
+            "userID": 10,
+            "duedate": "2024-04-10T23:43:54.000Z",
+            "total": 20,
+            "paid": true,
+            "amount": 20,
+            "createdAt": "2024-04-03T22:43:56.000Z",
+            "updatedAt": "2024-08-05T11:29:58.000Z"
+        },
+        {
+            "id": 63,
+            "userID": 10,
+            "duedate": "2024-04-10T23:44:01.000Z",
+            "total": 40,
+            "paid": true,
+            "amount": 20,
+            "createdAt": "2024-04-03T22:44:02.000Z",
+            "updatedAt": "2024-08-05T11:29:58.000Z"
+        },
+        {
+            "id": 64,
+            "userID": 10,
+            "duedate": "2024-04-10T23:44:45.000Z",
+            "total": 20,
+            "paid": true,
+            "amount": 5,
+            "createdAt": "2024-04-03T22:44:47.000Z",
+            "updatedAt": "2024-08-05T11:29:58.000Z"
+        },
+        {
+            "id": 65,
+            "userID": 10,
+            "duedate": "2024-04-10T23:46:25.000Z",
+            "total": 20,
+            "paid": true,
+            "amount": 2,
+            "createdAt": "2024-04-03T22:46:27.000Z",
+            "updatedAt": "2024-08-05T11:29:58.000Z"
+        },
+        {
+            "id": 66,
+            "userID": 5,
+            "duedate": "2024-04-11T00:19:35.000Z",
+            "total": 110,
+            "paid": true,
+            "amount": 20,
+            "createdAt": "2024-04-03T23:19:37.000Z",
+            "updatedAt": "2024-08-05T11:29:58.000Z"
+        },
+        {
+            "id": 67,
+            "userID": 2,
+            "duedate": "2024-04-11T05:26:41.000Z",
+            "total": 230,
+            "paid": true,
+            "amount": 50,
+            "createdAt": "2024-04-04T04:26:45.000Z",
+            "updatedAt": "2024-08-05T11:29:58.000Z"
+        },
+        {
+            "id": 68,
+            "userID": 2,
+            "duedate": "2024-04-12T22:55:55.000Z",
+            "total": 100,
+            "paid": true,
+            "amount": 50,
+            "createdAt": "2024-04-05T21:55:57.000Z",
+            "updatedAt": "2024-08-05T11:29:58.000Z"
+        },
+        {
+            "id": 69,
+            "userID": 5,
+            "duedate": "2024-06-03T08:39:45.000Z",
+            "total": 160,
+            "paid": true,
+            "amount": 5,
+            "createdAt": "2024-04-06T22:48:00.000Z",
+            "updatedAt": "2024-08-05T11:29:58.000Z"
+        },
+        {
+            "id": 70,
+            "userID": 4,
+            "duedate": "2024-04-15T07:27:40.000Z",
+            "total": 370,
+            "paid": true,
+            "amount": 370,
+            "createdAt": "2024-04-08T07:27:42.000Z",
+            "updatedAt": "2024-08-05T11:29:58.000Z"
+        },
+        {
+            "id": 71,
+            "userID": 7,
+            "duedate": "2024-04-15T08:15:29.000Z",
+            "total": 200,
+            "paid": true,
+            "amount": 200,
+            "createdAt": "2024-04-08T08:15:31.000Z",
+            "updatedAt": "2024-08-05T11:29:58.000Z"
+        },
+        {
+            "id": 72,
+            "userID": 2,
+            "duedate": "2024-04-15T22:19:47.000Z",
+            "total": 150,
+            "paid": true,
+            "amount": 50,
+            "createdAt": "2024-04-08T22:19:49.000Z",
+            "updatedAt": "2024-08-05T11:29:58.000Z"
+        },
+        {
+            "id": 73,
+            "userID": 5,
+            "duedate": "2024-04-17T00:31:11.000Z",
+            "total": 200,
+            "paid": true,
+            "amount": 40,
+            "createdAt": "2024-04-10T00:31:13.000Z",
+            "updatedAt": "2024-08-05T11:29:58.000Z"
+        },
+        {
+            "id": 74,
+            "userID": 2,
+            "duedate": "2024-04-18T23:19:58.000Z",
+            "total": 270,
+            "paid": true,
+            "amount": 70,
+            "createdAt": "2024-04-11T23:20:00.000Z",
+            "updatedAt": "2024-08-05T11:29:58.000Z"
+        },
+        {
+            "id": 75,
+            "userID": 2,
+            "duedate": "2024-04-19T23:59:49.000Z",
+            "total": 320,
+            "paid": true,
+            "amount": 20,
+            "createdAt": "2024-04-12T23:59:50.000Z",
+            "updatedAt": "2024-08-05T11:29:58.000Z"
+        },
+        {
+            "id": 76,
+            "userID": 4,
+            "duedate": "2024-04-21T06:42:29.000Z",
+            "total": 375,
+            "paid": true,
+            "amount": 375,
+            "createdAt": "2024-04-14T06:42:31.000Z",
+            "updatedAt": "2024-08-05T11:29:58.000Z"
+        },
+        {
+            "id": 77,
+            "userID": 5,
+            "duedate": "2024-05-04T02:03:55.000Z",
+            "total": 190,
+            "paid": true,
+            "amount": 20,
+            "createdAt": "2024-04-15T05:48:54.000Z",
+            "updatedAt": "2024-08-05T11:29:58.000Z"
+        },
+        {
+            "id": 78,
+            "userID": 9,
+            "duedate": "2024-04-26T02:15:38.000Z",
+            "total": 100,
+            "paid": true,
+            "amount": 100,
+            "createdAt": "2024-04-19T02:15:41.000Z",
+            "updatedAt": "2024-08-05T11:29:58.000Z"
+        },
+        {
+            "id": 79,
+            "userID": 16,
+            "duedate": "2024-04-26T02:16:38.000Z",
+            "total": 25,
+            "paid": true,
+            "amount": 25,
+            "createdAt": "2024-04-19T02:16:40.000Z",
+            "updatedAt": "2024-08-05T11:29:58.000Z"
+        },
+        {
+            "id": 80,
+            "userID": 4,
+            "duedate": "2024-05-06T06:31:52.000Z",
+            "total": 750,
+            "paid": true,
+            "amount": 50,
+            "createdAt": "2024-04-20T06:16:46.000Z",
+            "updatedAt": "2024-08-05T11:29:58.000Z"
+        },
+        {
+            "id": 81,
+            "userID": 2,
+            "duedate": "2024-04-27T21:21:50.000Z",
+            "total": 70,
+            "paid": true,
+            "amount": 50,
+            "createdAt": "2024-04-20T21:21:52.000Z",
+            "updatedAt": "2024-08-05T11:29:58.000Z"
+        },
+        {
+            "id": 82,
+            "userID": 3,
+            "duedate": "2024-04-29T03:48:23.000Z",
+            "total": 340,
+            "paid": true,
+            "amount": 20,
+            "createdAt": "2024-04-22T03:48:25.000Z",
+            "updatedAt": "2024-08-05T11:29:58.000Z"
+        },
+        {
+            "id": 83,
+            "userID": 2,
+            "duedate": "2024-04-29T03:48:38.000Z",
+            "total": 190,
+            "paid": true,
+            "amount": 120,
+            "createdAt": "2024-04-22T03:48:41.000Z",
+            "updatedAt": "2024-08-05T11:29:58.000Z"
+        },
+        {
+            "id": 84,
+            "userID": 2,
+            "duedate": "2024-05-01T02:27:39.000Z",
+            "total": 290,
+            "paid": true,
+            "amount": 100,
+            "createdAt": "2024-04-24T02:27:42.000Z",
+            "updatedAt": "2024-08-05T11:29:58.000Z"
+        },
+        {
+            "id": 85,
+            "userID": 8,
+            "duedate": "2024-05-02T06:04:23.000Z",
+            "total": 50,
+            "paid": true,
+            "amount": 50,
+            "createdAt": "2024-04-25T06:04:24.000Z",
+            "updatedAt": "2024-08-05T11:29:58.000Z"
+        },
+        {
+            "id": 86,
+            "userID": 2,
+            "duedate": "2024-05-03T02:02:56.000Z",
+            "total": 410,
+            "paid": true,
+            "amount": 90,
+            "createdAt": "2024-04-26T02:02:57.000Z",
+            "updatedAt": "2024-08-05T11:29:58.000Z"
+        },
+        {
+            "id": 87,
+            "userID": 4,
+            "duedate": "2024-05-04T02:03:28.000Z",
+            "total": 425,
+            "paid": true,
+            "amount": 370,
+            "createdAt": "2024-04-27T02:03:30.000Z",
+            "updatedAt": "2024-08-05T11:29:58.000Z"
+        },
+        {
+            "id": 88,
+            "userID": 16,
+            "duedate": "2024-05-29T12:00:00.000Z",
+            "total": 375,
+            "paid": true,
+            "amount": 30,
+            "createdAt": "2024-04-27T02:03:43.000Z",
+            "updatedAt": "2024-08-05T11:29:58.000Z"
+        },
+        {
+            "id": 89,
+            "userID": 3,
+            "duedate": "2024-05-05T11:01:48.000Z",
+            "total": 298,
+            "paid": true,
+            "amount": 20,
+            "createdAt": "2024-04-28T11:01:49.000Z",
+            "updatedAt": "2024-08-05T11:29:58.000Z"
+        },
+        {
+            "id": 90,
+            "userID": 2,
+            "duedate": "2024-05-21T21:50:13.000Z",
+            "total": 90,
+            "paid": true,
+            "amount": 90,
+            "createdAt": "2024-04-29T06:31:11.000Z",
+            "updatedAt": "2024-08-05T11:29:58.000Z"
+        },
+        {
+            "id": 91,
+            "userID": 7,
+            "duedate": "2024-05-06T08:20:55.000Z",
+            "total": 120,
+            "paid": true,
+            "amount": 120,
+            "createdAt": "2024-04-29T08:20:57.000Z",
+            "updatedAt": "2024-08-05T11:29:58.000Z"
+        },
+        {
+            "id": 92,
+            "userID": 17,
+            "duedate": "2024-05-08T01:51:34.000Z",
+            "total": 20,
+            "paid": true,
+            "amount": 20,
+            "createdAt": "2024-05-01T01:51:35.000Z",
+            "updatedAt": "2024-08-05T11:29:58.000Z"
+        },
+        {
+            "id": 93,
+            "userID": 2,
+            "duedate": "2024-05-21T21:50:16.000Z",
+            "total": 210,
+            "paid": true,
+            "amount": 120,
+            "createdAt": "2024-05-01T01:51:43.000Z",
+            "updatedAt": "2024-08-05T11:29:58.000Z"
+        },
+        {
+            "id": 94,
+            "userID": 17,
+            "duedate": "2024-05-09T01:11:31.000Z",
+            "total": 20,
+            "paid": true,
+            "amount": 20,
+            "createdAt": "2024-05-02T01:11:33.000Z",
+            "updatedAt": "2024-08-05T11:29:58.000Z"
+        },
+        {
+            "id": 95,
+            "userID": 4,
+            "duedate": "2024-05-09T06:11:44.000Z",
+            "total": 450,
+            "paid": true,
+            "amount": 25,
+            "createdAt": "2024-05-02T06:11:46.000Z",
+            "updatedAt": "2024-08-05T11:29:58.000Z"
+        },
+        {
+            "id": 96,
+            "userID": 4,
+            "duedate": "2024-05-09T06:16:11.000Z",
+            "total": 500,
+            "paid": true,
+            "amount": 50,
+            "createdAt": "2024-05-02T06:16:12.000Z",
+            "updatedAt": "2024-08-05T11:29:58.000Z"
+        },
+        {
+            "id": 97,
+            "userID": 5,
+            "duedate": "2024-05-09T06:16:20.000Z",
+            "total": 75,
+            "paid": true,
+            "amount": 25,
+            "createdAt": "2024-05-02T06:16:22.000Z",
+            "updatedAt": "2024-08-05T11:29:58.000Z"
+        },
+        {
+            "id": 98,
+            "userID": 7,
+            "duedate": "2024-05-09T08:12:50.000Z",
+            "total": 120,
+            "paid": true,
+            "amount": 120,
+            "createdAt": "2024-05-02T08:12:51.000Z",
+            "updatedAt": "2024-08-05T11:29:58.000Z"
+        },
+        {
+            "id": 99,
+            "userID": 8,
+            "duedate": "2024-05-09T08:50:18.000Z",
+            "total": 50,
+            "paid": true,
+            "amount": 50,
+            "createdAt": "2024-05-02T08:50:20.000Z",
+            "updatedAt": "2024-08-05T11:29:58.000Z"
+        },
+        {
+            "id": 100,
+            "userID": 17,
+            "duedate": "2024-05-12T03:49:13.000Z",
+            "total": 40,
+            "paid": true,
+            "amount": 20,
+            "createdAt": "2024-05-05T03:49:14.000Z",
+            "updatedAt": "2024-08-05T11:29:58.000Z"
+        },
+        {
+            "id": 101,
+            "userID": 5,
+            "duedate": "2024-06-03T08:39:48.000Z",
+            "total": 195,
+            "paid": true,
+            "amount": 115,
+            "createdAt": "2024-05-05T08:48:53.000Z",
+            "updatedAt": "2024-08-05T11:29:58.000Z"
+        },
+        {
+            "id": 102,
+            "userID": 4,
+            "duedate": "2024-05-13T09:19:28.000Z",
+            "total": 50,
+            "paid": true,
+            "amount": 50,
+            "createdAt": "2024-05-06T09:19:29.000Z",
+            "updatedAt": "2024-08-05T11:29:58.000Z"
+        },
+        {
+            "id": 103,
+            "userID": 8,
+            "duedate": "2024-05-15T05:25:22.000Z",
+            "total": 50,
+            "paid": true,
+            "amount": 50,
+            "createdAt": "2024-05-08T05:25:23.000Z",
+            "updatedAt": "2024-08-05T11:29:58.000Z"
+        },
+        {
+            "id": 104,
+            "userID": 4,
+            "duedate": "2024-05-15T10:40:39.000Z",
+            "total": 100,
+            "paid": true,
+            "amount": 50,
+            "createdAt": "2024-05-08T10:40:41.000Z",
+            "updatedAt": "2024-08-05T11:29:58.000Z"
+        },
+        {
+            "id": 105,
+            "userID": 7,
+            "duedate": "2024-05-17T02:03:47.000Z",
+            "total": 120,
+            "paid": true,
+            "amount": 120,
+            "createdAt": "2024-05-10T02:03:49.000Z",
+            "updatedAt": "2024-08-05T11:29:58.000Z"
+        },
+        {
+            "id": 106,
+            "userID": 4,
+            "duedate": "2024-05-19T09:03:57.000Z",
+            "total": 50,
+            "paid": true,
+            "amount": 50,
+            "createdAt": "2024-05-12T09:03:59.000Z",
+            "updatedAt": "2024-08-05T11:29:58.000Z"
+        },
+        {
+            "id": 107,
+            "userID": 17,
+            "duedate": "2024-05-21T21:49:45.000Z",
+            "total": 20,
+            "paid": true,
+            "amount": 20,
+            "createdAt": "2024-05-14T21:49:55.000Z",
+            "updatedAt": "2024-08-05T11:29:58.000Z"
+        },
+        {
+            "id": 108,
+            "userID": 4,
+            "duedate": "2024-05-23T04:13:16.000Z",
+            "total": 50,
+            "paid": true,
+            "amount": 50,
+            "createdAt": "2024-05-16T04:13:18.000Z",
+            "updatedAt": "2024-08-05T11:29:58.000Z"
+        },
+        {
+            "id": 111,
+            "userID": 7,
+            "duedate": "2024-06-03T08:39:51.000Z",
+            "total": 240,
+            "paid": true,
+            "amount": 60,
+            "createdAt": "2024-05-17T01:05:14.000Z",
+            "updatedAt": "2024-08-05T11:29:58.000Z"
+        },
+        {
+            "id": 112,
+            "userID": 4,
+            "duedate": "2024-05-24T01:54:39.000Z",
+            "total": 178,
+            "paid": true,
+            "amount": 128,
+            "createdAt": "2024-05-17T01:54:43.000Z",
+            "updatedAt": "2024-08-05T11:29:58.000Z"
+        },
+        {
+            "id": 114,
+            "userID": 7,
+            "duedate": "2024-05-30T09:05:09.000Z",
+            "total": 180,
+            "paid": true,
+            "amount": 120,
+            "createdAt": "2024-05-23T09:05:12.000Z",
+            "updatedAt": "2024-08-05T11:29:58.000Z"
+        },
+        {
+            "id": 115,
+            "userID": 2,
+            "duedate": "2024-05-31T01:15:24.000Z",
+            "total": 145,
+            "paid": true,
+            "amount": 40,
+            "createdAt": "2024-05-24T01:15:27.000Z",
+            "updatedAt": "2024-08-05T11:29:58.000Z"
+        },
+        {
+            "id": 116,
+            "userID": 8,
+            "duedate": "2024-06-02T09:43:28.000Z",
+            "total": 120,
+            "paid": true,
+            "amount": 120,
+            "createdAt": "2024-05-26T09:43:29.000Z",
+            "updatedAt": "2024-08-05T11:29:58.000Z"
+        },
+        {
+            "id": 117,
+            "userID": 17,
+            "duedate": "2024-06-03T00:29:56.000Z",
+            "total": 20,
+            "paid": true,
+            "amount": 20,
+            "createdAt": "2024-05-27T00:29:58.000Z",
+            "updatedAt": "2024-08-05T11:29:58.000Z"
+        },
+        {
+            "id": 118,
+            "userID": 2,
+            "duedate": "2024-06-03T01:44:41.000Z",
+            "total": 235,
+            "paid": true,
+            "amount": 90,
+            "createdAt": "2024-05-27T01:44:43.000Z",
+            "updatedAt": "2024-08-05T11:29:58.000Z"
+        },
+        {
+            "id": 119,
+            "userID": 2,
+            "duedate": "2024-06-03T06:28:17.000Z",
+            "total": 300,
+            "paid": true,
+            "amount": 130,
+            "createdAt": "2024-05-27T06:28:22.000Z",
+            "updatedAt": "2024-08-05T11:29:58.000Z"
+        },
+        {
+            "id": 123,
+            "userID": 2,
+            "duedate": "2024-06-06T07:02:09.000Z",
+            "total": 220,
+            "paid": true,
+            "amount": 90,
+            "createdAt": "2024-05-30T07:02:11.000Z",
+            "updatedAt": "2024-08-05T11:29:58.000Z"
+        },
+        {
+            "id": 124,
+            "userID": 7,
+            "duedate": "2024-06-07T03:06:36.000Z",
+            "total": 230,
+            "paid": true,
+            "amount": 50,
+            "createdAt": "2024-05-31T03:06:38.000Z",
+            "updatedAt": "2024-08-05T11:29:58.000Z"
+        },
+        {
+            "id": 125,
+            "userID": 5,
+            "duedate": "2024-06-09T22:06:45.000Z",
+            "total": 235,
+            "paid": true,
+            "amount": 120,
+            "createdAt": "2024-06-02T22:06:48.000Z",
+            "updatedAt": "2024-08-05T11:29:58.000Z"
+        },
+        {
+            "id": 126,
+            "userID": 2,
+            "duedate": "2024-06-09T22:07:38.000Z",
+            "total": 330,
+            "paid": true,
+            "amount": 30,
+            "createdAt": "2024-06-02T22:07:40.000Z",
+            "updatedAt": "2024-08-05T11:29:58.000Z"
+        },
+        {
+            "id": 127,
+            "userID": 3,
+            "duedate": "2024-06-10T06:55:16.000Z",
+            "total": 142,
+            "paid": true,
+            "amount": 40,
+            "createdAt": "2024-06-03T06:55:19.000Z",
+            "updatedAt": "2024-08-05T11:29:58.000Z"
+        },
+        {
+            "id": 128,
+            "userID": 2,
+            "duedate": "2024-06-12T02:06:26.000Z",
+            "total": 440,
+            "paid": true,
+            "amount": 60,
+            "createdAt": "2024-06-05T02:06:28.000Z",
+            "updatedAt": "2024-08-05T11:29:58.000Z"
+        },
+        {
+            "id": 130,
+            "userID": 5,
+            "duedate": "2024-06-12T05:23:57.000Z",
+            "total": 15,
+            "paid": true,
+            "amount": 15,
+            "createdAt": "2024-06-05T05:23:59.000Z",
+            "updatedAt": "2024-08-05T11:29:58.000Z"
+        },
+        {
+            "id": 131,
+            "userID": 7,
+            "duedate": "2024-06-14T03:50:35.000Z",
+            "total": 350,
+            "paid": true,
+            "amount": 120,
+            "createdAt": "2024-06-07T03:50:37.000Z",
+            "updatedAt": "2024-08-05T11:29:58.000Z"
+        },
+        {
+            "id": 132,
+            "userID": 2,
+            "duedate": "2024-06-15T01:42:12.000Z",
+            "total": 250,
+            "paid": true,
+            "amount": 110,
+            "createdAt": "2024-06-08T01:42:14.000Z",
+            "updatedAt": "2024-08-27T21:56:40.000Z"
+        },
+        {
+            "id": 133,
+            "userID": 2,
+            "duedate": "2024-06-16T21:42:58.000Z",
+            "total": 340,
+            "paid": true,
+            "amount": 90,
+            "createdAt": "2024-06-09T21:43:00.000Z",
+            "updatedAt": "2024-08-27T21:56:47.000Z"
+        },
+        {
+            "id": 134,
+            "userID": 2,
+            "duedate": "2024-06-19T09:01:24.000Z",
+            "total": 450,
+            "paid": true,
+            "amount": 110,
+            "createdAt": "2024-06-12T09:01:26.000Z",
+            "updatedAt": "2024-08-27T21:56:53.000Z"
+        },
+        {
+            "id": 135,
+            "userID": 16,
+            "duedate": "2024-06-20T02:13:32.000Z",
+            "total": 80,
+            "paid": true,
+            "amount": 80,
+            "createdAt": "2024-06-13T02:13:34.000Z",
+            "updatedAt": "2024-08-05T11:29:58.000Z"
+        },
+        {
+            "id": 136,
+            "userID": 2,
+            "duedate": "2024-06-21T04:47:33.000Z",
+            "total": 560,
+            "paid": true,
+            "amount": 110,
+            "createdAt": "2024-06-14T04:47:35.000Z",
+            "updatedAt": "2024-08-27T21:56:58.000Z"
+        },
+        {
+            "id": 137,
+            "userID": 3,
+            "duedate": "2024-06-23T21:11:51.000Z",
+            "total": 52,
+            "paid": true,
+            "amount": 40,
+            "createdAt": "2024-06-16T21:11:53.000Z",
+            "updatedAt": "2024-08-05T11:29:58.000Z"
+        },
+        {
+            "id": 138,
+            "userID": 7,
+            "duedate": "2024-06-23T21:12:12.000Z",
+            "total": 120,
+            "paid": true,
+            "amount": 120,
+            "createdAt": "2024-06-16T21:12:14.000Z",
+            "updatedAt": "2024-08-05T11:29:58.000Z"
+        },
+        {
+            "id": 139,
+            "userID": 5,
+            "duedate": "2024-06-28T06:03:22.000Z",
+            "total": 120,
+            "paid": true,
+            "amount": 120,
+            "createdAt": "2024-06-21T06:03:23.000Z",
+            "updatedAt": "2024-08-05T11:29:58.000Z"
+        },
+        {
+            "id": 140,
+            "userID": 2,
+            "duedate": "2024-06-29T03:50:57.000Z",
+            "total": 670,
+            "paid": false,
+            "amount": 80,
+            "createdAt": "2024-06-22T03:50:59.000Z",
+            "updatedAt": "2024-08-27T21:57:08.000Z"
+        },
+        {
+            "id": 141,
+            "userID": 3,
+            "duedate": "2024-07-01T21:21:46.000Z",
+            "total": 20,
+            "paid": true,
+            "amount": 20,
+            "createdAt": "2024-06-24T21:21:48.000Z",
+            "updatedAt": "2024-08-05T11:29:58.000Z"
+        },
+        {
+            "id": 142,
+            "userID": 7,
+            "duedate": "2024-07-03T07:19:41.000Z",
+            "total": 120,
+            "paid": true,
+            "amount": 120,
+            "createdAt": "2024-06-26T07:19:43.000Z",
+            "updatedAt": "2024-08-21T05:57:29.000Z"
+        },
+        {
+            "id": 144,
+            "userID": 3,
+            "duedate": "2024-07-07T23:11:46.000Z",
+            "total": 40,
+            "paid": true,
+            "amount": 40,
+            "createdAt": "2024-06-30T23:11:49.000Z",
+            "updatedAt": "2024-08-05T11:29:58.000Z"
+        },
+        {
+            "id": 145,
+            "userID": 17,
+            "duedate": "2024-07-08T22:41:42.000Z",
+            "total": 20,
+            "paid": true,
+            "amount": 20,
+            "createdAt": "2024-07-01T22:41:43.000Z",
+            "updatedAt": "2024-08-05T11:29:58.000Z"
+        },
+        {
+            "id": 146,
+            "userID": 18,
+            "duedate": "2024-07-08T22:42:13.000Z",
+            "total": 70,
+            "paid": true,
+            "amount": 70,
+            "createdAt": "2024-07-01T22:42:15.000Z",
+            "updatedAt": "2024-08-05T11:29:58.000Z"
+        },
+        {
+            "id": 147,
+            "userID": 8,
+            "duedate": "2024-07-09T04:58:43.000Z",
+            "total": 110,
+            "paid": true,
+            "amount": 110,
+            "createdAt": "2024-07-02T04:58:45.000Z",
+            "updatedAt": "2024-08-05T11:29:58.000Z"
+        },
+        {
+            "id": 148,
+            "userID": 18,
+            "duedate": "2024-07-10T03:51:07.000Z",
+            "total": 190,
+            "paid": true,
+            "amount": 120,
+            "createdAt": "2024-07-03T03:51:09.000Z",
+            "updatedAt": "2024-08-05T11:29:58.000Z"
+        },
+        {
+            "id": 149,
+            "userID": 18,
+            "duedate": "2024-07-17T00:02:24.000Z",
+            "total": 90,
+            "paid": true,
+            "amount": 90,
+            "createdAt": "2024-07-10T00:02:26.000Z",
+            "updatedAt": "2024-08-05T11:29:58.000Z"
+        },
+        {
+            "id": 150,
+            "userID": 2,
+            "duedate": "2024-07-17T00:02:37.000Z",
+            "total": 780,
+            "paid": false,
+            "amount": 110,
+            "createdAt": "2024-07-10T00:02:39.000Z",
+            "updatedAt": "2024-08-05T11:29:58.000Z"
+        },
+        {
+            "id": 151,
+            "userID": 3,
+            "duedate": "2024-07-19T05:29:32.000Z",
+            "total": 20,
+            "paid": true,
+            "amount": 20,
+            "createdAt": "2024-07-12T05:29:33.000Z",
+            "updatedAt": "2024-08-05T11:29:58.000Z"
+        },
+        {
+            "id": 152,
+            "userID": 5,
+            "duedate": "2024-07-20T23:10:08.000Z",
+            "total": 120,
+            "paid": true,
+            "amount": 40,
+            "createdAt": "2024-07-13T23:10:10.000Z",
+            "updatedAt": "2024-08-15T00:45:09.000Z"
+        },
+        {
+            "id": 153,
+            "userID": 11,
+            "duedate": "2024-07-21T01:09:03.000Z",
+            "total": 110,
+            "paid": true,
+            "amount": 110,
+            "createdAt": "2024-07-14T01:09:05.000Z",
+            "updatedAt": "2024-08-05T11:29:58.000Z"
+        },
+        {
+            "id": 154,
+            "userID": 2,
+            "duedate": "2024-07-21T04:43:04.000Z",
+            "total": 830,
+            "paid": false,
+            "amount": 50,
+            "createdAt": "2024-07-14T04:43:06.000Z",
+            "updatedAt": "2024-08-05T11:29:58.000Z"
+        },
+        {
+            "id": 155,
+            "userID": 16,
+            "duedate": "2024-07-21T07:48:28.000Z",
+            "total": 280,
+            "paid": true,
+            "amount": 280,
+            "createdAt": "2024-07-14T07:48:30.000Z",
+            "updatedAt": "2024-08-05T11:29:58.000Z"
+        },
+        {
+            "id": 156,
+            "userID": 18,
+            "duedate": "2024-07-22T08:15:19.000Z",
+            "total": 110,
+            "paid": true,
+            "amount": 110,
+            "createdAt": "2024-07-15T08:15:22.000Z",
+            "updatedAt": "2024-08-05T11:29:58.000Z"
+        },
+        {
+            "id": 157,
+            "userID": 2,
+            "duedate": "2024-07-23T04:11:39.000Z",
+            "total": 940,
+            "paid": false,
+            "amount": 110,
+            "createdAt": "2024-07-16T04:11:40.000Z",
+            "updatedAt": "2024-08-05T11:29:58.000Z"
+        },
+        {
+            "id": 158,
+            "userID": 3,
+            "duedate": "2024-07-24T04:05:21.000Z",
+            "total": 130,
+            "paid": true,
+            "amount": 130,
+            "createdAt": "2024-07-17T04:05:25.000Z",
+            "updatedAt": "2024-08-05T11:29:58.000Z"
+        },
+        {
+            "id": 159,
+            "userID": 2,
+            "duedate": "2024-07-25T21:41:03.000Z",
+            "total": 1090,
+            "paid": false,
+            "amount": 150,
+            "createdAt": "2024-07-18T21:41:06.000Z",
+            "updatedAt": "2024-08-05T11:29:58.000Z"
+        },
+        {
+            "id": 160,
+            "userID": 18,
+            "duedate": "2024-07-29T22:04:56.000Z",
+            "total": 200,
+            "paid": true,
+            "amount": 90,
+            "createdAt": "2024-07-22T22:04:59.000Z",
+            "updatedAt": "2024-08-05T11:29:58.000Z"
+        },
+        {
+            "id": 161,
+            "userID": 2,
+            "duedate": "2024-07-29T23:46:32.000Z",
+            "total": 1160,
+            "paid": false,
+            "amount": 70,
+            "createdAt": "2024-07-22T23:46:34.000Z",
+            "updatedAt": "2024-08-05T11:29:58.000Z"
+        },
+        {
+            "id": 162,
+            "userID": 3,
+            "duedate": "2024-07-31T00:58:28.000Z",
+            "total": 110,
+            "paid": true,
+            "amount": 110,
+            "createdAt": "2024-07-24T00:58:30.000Z",
+            "updatedAt": "2024-08-07T01:26:09.000Z"
+        },
+        {
+            "id": 163,
+            "userID": 16,
+            "duedate": "2024-08-01T00:03:17.000Z",
+            "total": 280,
+            "paid": true,
+            "amount": 280,
+            "createdAt": "2024-07-25T00:03:21.000Z",
+            "updatedAt": "2024-08-07T01:25:44.000Z"
+        },
+        {
+            "id": 164,
+            "userID": 7,
+            "duedate": "2024-08-01T00:03:34.000Z",
+            "total": 170,
+            "paid": true,
+            "amount": 50,
+            "createdAt": "2024-07-25T00:03:35.000Z",
+            "updatedAt": "2024-08-05T11:29:58.000Z"
+        },
+        {
+            "id": 165,
+            "userID": 2,
+            "duedate": "2024-08-01T05:00:43.000Z",
+            "total": 1250,
+            "paid": true,
+            "amount": 90,
+            "createdAt": "2024-07-25T05:00:45.000Z",
+            "updatedAt": "2024-08-05T11:29:58.000Z"
+        },
+        {
+            "id": 166,
+            "userID": 11,
+            "duedate": "2024-08-01T06:24:00.000Z",
+            "total": 110,
+            "paid": true,
+            "amount": 110,
+            "createdAt": "2024-07-25T06:24:02.000Z",
+            "updatedAt": "2024-08-08T06:25:32.000Z"
+        },
+        {
+            "id": 167,
+            "userID": 2,
+            "duedate": "2024-08-04T23:01:24.000Z",
+            "total": 1230,
+            "paid": false,
+            "amount": 150,
+            "createdAt": "2024-07-28T23:01:26.000Z",
+            "updatedAt": "2024-08-05T11:29:58.000Z"
+        },
+        {
+            "id": 168,
+            "userID": 7,
+            "duedate": "2024-08-05T08:34:24.000Z",
+            "total": 220,
+            "paid": true,
+            "amount": 50,
+            "createdAt": "2024-07-29T08:34:27.000Z",
+            "updatedAt": "2024-08-05T11:29:58.000Z"
+        },
+        {
+            "id": 169,
+            "userID": 18,
+            "duedate": "2024-08-06T02:24:19.000Z",
+            "total": 90,
+            "paid": true,
+            "amount": 90,
+            "createdAt": "2024-07-30T02:24:21.000Z",
+            "updatedAt": "2024-08-06T02:53:00.000Z"
+        },
+        {
+            "id": 170,
+            "userID": 2,
+            "duedate": "2024-08-07T01:43:02.000Z",
+            "total": 1290,
+            "paid": false,
+            "amount": 60,
+            "createdAt": "2024-07-31T01:43:04.000Z",
+            "updatedAt": "2024-08-05T11:29:58.000Z"
+        },
+        {
+            "id": 171,
+            "userID": 7,
+            "duedate": "2024-08-07T23:55:30.000Z",
+            "total": 170,
+            "paid": true,
+            "amount": 50,
+            "createdAt": "2024-07-31T23:55:33.000Z",
+            "updatedAt": "2024-08-08T23:46:42.000Z"
+        },
+        {
+            "id": 172,
+            "userID": 5,
+            "duedate": "2024-08-09T01:20:18.000Z",
+            "total": 160,
+            "paid": false,
+            "amount": 80,
+            "createdAt": "2024-08-02T01:20:21.000Z",
+            "updatedAt": "2024-08-15T00:45:14.000Z"
+        },
+        {
+            "id": 173,
+            "userID": 2,
+            "duedate": "2024-08-12T11:31:17.000Z",
+            "total": 1450,
+            "paid": false,
+            "amount": 110,
+            "createdAt": "2024-08-05T11:31:19.000Z",
+            "updatedAt": "2024-08-05T11:31:19.000Z"
+        },
+        {
+            "id": 174,
+            "userID": 7,
+            "duedate": "2024-08-12T11:32:43.000Z",
+            "total": 220,
+            "paid": true,
+            "amount": 50,
+            "createdAt": "2024-08-05T11:32:44.000Z",
+            "updatedAt": "2024-08-08T23:46:43.000Z"
+        },
+        {
+            "id": 176,
+            "userID": 18,
+            "duedate": "2024-08-13T02:53:11.000Z",
+            "total": 90,
+            "paid": false,
+            "amount": 20,
+            "createdAt": "2024-08-06T02:53:12.000Z",
+            "updatedAt": "2024-08-13T03:15:05.000Z"
+        },
+        {
+            "id": 177,
+            "userID": 16,
+            "duedate": "2024-08-14T01:25:54.000Z",
+            "total": 280,
+            "paid": true,
+            "amount": 280,
+            "createdAt": "2024-08-07T01:25:56.000Z",
+            "updatedAt": "2024-08-15T22:27:15.000Z"
+        },
+        {
+            "id": 178,
+            "userID": 3,
+            "duedate": "2024-08-14T01:26:47.000Z",
+            "total": 50,
+            "paid": true,
+            "amount": 50,
+            "createdAt": "2024-08-07T01:26:49.000Z",
+            "updatedAt": "2024-08-14T01:29:23.000Z"
+        },
+        {
+            "id": 179,
+            "userID": 2,
+            "duedate": "2024-08-14T05:25:44.000Z",
+            "total": 1560,
+            "paid": false,
+            "amount": 110,
+            "createdAt": "2024-08-07T05:25:47.000Z",
+            "updatedAt": "2024-08-07T05:25:47.000Z"
+        },
+        {
+            "id": 180,
+            "userID": 7,
+            "duedate": "2024-08-16T00:03:35.000Z",
+            "total": 170,
+            "paid": true,
+            "amount": 50,
+            "createdAt": "2024-08-09T00:03:37.000Z",
+            "updatedAt": "2024-08-21T05:57:30.000Z"
+        },
+        {
+            "id": 181,
+            "userID": 18,
+            "duedate": "2024-08-18T22:12:40.000Z",
+            "total": 125,
+            "paid": false,
+            "amount": 35,
+            "createdAt": "2024-08-11T22:12:42.000Z",
+            "updatedAt": "2024-08-11T22:12:42.000Z"
+        },
+        {
+            "id": 182,
+            "userID": 7,
+            "duedate": "2024-08-18T22:13:20.000Z",
+            "total": 270,
+            "paid": true,
+            "amount": 100,
+            "createdAt": "2024-08-11T22:13:23.000Z",
+            "updatedAt": "2024-08-21T05:57:30.000Z"
+        },
+        {
+            "id": 183,
+            "userID": 18,
+            "duedate": "2024-08-20T03:17:40.000Z",
+            "total": 155,
+            "paid": false,
+            "amount": 100,
+            "createdAt": "2024-08-13T03:17:43.000Z",
+            "updatedAt": "2024-08-13T03:17:43.000Z"
+        },
+        {
+            "id": 184,
+            "userID": 2,
+            "duedate": "2024-08-20T20:47:15.000Z",
+            "total": 1670,
+            "paid": false,
+            "amount": 110,
+            "createdAt": "2024-08-13T20:47:17.000Z",
+            "updatedAt": "2024-08-13T20:47:17.000Z"
+        },
+        {
+            "id": 185,
+            "userID": 3,
+            "duedate": "2024-08-21T01:29:30.000Z",
+            "total": 110,
+            "paid": true,
+            "amount": 110,
+            "createdAt": "2024-08-14T01:29:32.000Z",
+            "updatedAt": "2024-08-21T00:39:04.000Z"
+        },
+        {
+            "id": 186,
+            "userID": 2,
+            "duedate": "2024-08-22T22:15:32.000Z",
+            "total": 1780,
+            "paid": false,
+            "amount": 110,
+            "createdAt": "2024-08-15T22:15:35.000Z",
+            "updatedAt": "2024-08-15T22:15:35.000Z"
+        },
+        {
+            "id": 187,
+            "userID": 3,
+            "duedate": "2024-08-22T22:15:41.000Z",
+            "total": 130,
+            "paid": true,
+            "amount": 20,
+            "createdAt": "2024-08-15T22:15:43.000Z",
+            "updatedAt": "2024-08-21T00:39:04.000Z"
+        },
+        {
+            "id": 188,
+            "userID": 16,
+            "duedate": "2024-08-22T22:27:25.000Z",
+            "total": 280,
+            "paid": true,
+            "amount": 280,
+            "createdAt": "2024-08-15T22:27:27.000Z",
+            "updatedAt": "2024-08-25T23:46:05.000Z"
+        },
+        {
+            "id": 189,
+            "userID": 11,
+            "duedate": "2024-08-24T00:31:04.000Z",
+            "total": 50,
+            "paid": true,
+            "amount": 50,
+            "createdAt": "2024-08-17T00:31:06.000Z",
+            "updatedAt": "2024-08-22T06:44:02.000Z"
+        },
+        {
+            "id": 190,
+            "userID": 3,
+            "duedate": "2024-08-24T03:16:08.000Z",
+            "total": 180,
+            "paid": true,
+            "amount": 50,
+            "createdAt": "2024-08-17T03:16:10.000Z",
+            "updatedAt": "2024-08-21T00:39:05.000Z"
+        },
+        {
+            "id": 191,
+            "userID": 2,
+            "duedate": "2024-08-25T01:04:34.000Z",
+            "total": 1890,
+            "paid": false,
+            "amount": 110,
+            "createdAt": "2024-08-18T01:04:41.000Z",
+            "updatedAt": "2024-08-18T01:04:41.000Z"
+        },
+        {
+            "id": 193,
+            "userID": 18,
+            "duedate": "2024-08-25T23:34:12.000Z",
+            "total": 305,
+            "paid": false,
+            "amount": 100,
+            "createdAt": "2024-08-18T23:34:15.000Z",
+            "updatedAt": "2024-08-18T23:34:15.000Z"
+        },
+        {
+            "id": 194,
+            "userID": 18,
+            "duedate": "2024-08-25T23:34:21.000Z",
+            "total": 365,
+            "paid": false,
+            "amount": 60,
+            "createdAt": "2024-08-18T23:34:23.000Z",
+            "updatedAt": "2024-08-18T23:34:23.000Z"
+        },
+        {
+            "id": 195,
+            "userID": 17,
+            "duedate": "2024-08-26T00:01:15.000Z",
+            "total": 20,
+            "paid": false,
+            "amount": 20,
+            "createdAt": "2024-08-19T00:01:36.000Z",
+            "updatedAt": "2024-08-19T00:01:36.000Z"
+        },
+        {
+            "id": 196,
+            "userID": 2,
+            "duedate": "2024-08-27T03:51:47.000Z",
+            "total": 2000,
+            "paid": false,
+            "amount": 110,
+            "createdAt": "2024-08-20T03:51:49.000Z",
+            "updatedAt": "2024-08-20T03:51:49.000Z"
+        },
+        {
+            "id": 197,
+            "userID": 17,
+            "duedate": "2024-08-27T20:41:48.000Z",
+            "total": 40,
+            "paid": false,
+            "amount": 20,
+            "createdAt": "2024-08-20T20:41:49.000Z",
+            "updatedAt": "2024-08-20T20:41:49.000Z"
+        },
+        {
+            "id": 198,
+            "userID": 3,
+            "duedate": "2024-08-28T00:39:19.000Z",
+            "total": 110,
+            "paid": true,
+            "amount": 110,
+            "createdAt": "2024-08-21T00:39:21.000Z",
+            "updatedAt": "2024-08-27T21:56:03.000Z"
+        },
+        {
+            "id": 199,
+            "userID": 11,
+            "duedate": "2024-08-29T07:01:29.000Z",
+            "total": 110,
+            "paid": false,
+            "amount": 110,
+            "createdAt": "2024-08-22T07:01:30.000Z",
+            "updatedAt": "2024-08-22T07:01:30.000Z"
+        },
+        {
+            "id": 200,
+            "userID": 3,
+            "duedate": "2024-08-30T03:24:14.000Z",
+            "total": 150,
+            "paid": true,
+            "amount": 40,
+            "createdAt": "2024-08-23T03:24:16.000Z",
+            "updatedAt": "2024-08-27T21:56:03.000Z"
+        },
+        {
+            "id": 201,
+            "userID": 2,
+            "duedate": "2024-08-30T05:39:17.000Z",
+            "total": 2110,
+            "paid": false,
+            "amount": 110,
+            "createdAt": "2024-08-23T05:39:19.000Z",
+            "updatedAt": "2024-08-23T05:39:19.000Z"
+        },
+        {
+            "id": 202,
+            "userID": 8,
+            "duedate": "2024-08-31T01:05:22.000Z",
+            "total": 110,
+            "paid": true,
+            "amount": 110,
+            "createdAt": "2024-08-24T01:05:24.000Z",
+            "updatedAt": "2024-08-25T08:39:20.000Z"
+        },
+        {
+            "id": 203,
+            "userID": 2,
+            "duedate": "2024-09-01T08:39:27.000Z",
+            "total": 2220,
+            "paid": false,
+            "amount": 110,
+            "createdAt": "2024-08-25T08:39:28.000Z",
+            "updatedAt": "2024-08-25T08:39:28.000Z"
+        },
+        {
+            "id": 205,
+            "userID": 3,
+            "duedate": "2024-09-02T09:44:35.000Z",
+            "total": 170,
+            "paid": true,
+            "amount": 20,
+            "createdAt": "2024-08-26T09:44:37.000Z",
+            "updatedAt": "2024-08-27T21:56:04.000Z"
+        },
+        {
+            "id": 206,
+            "userID": 2,
+            "duedate": "2024-09-03T03:33:13.000Z",
+            "total": 2330,
+            "paid": false,
+            "amount": 110,
+            "createdAt": "2024-08-27T03:33:15.000Z",
+            "updatedAt": "2024-08-27T03:33:15.000Z"
+        },
+        {
+            "id": 207,
+            "userID": 16,
+            "duedate": "2024-09-03T03:33:35.000Z",
+            "total": 280,
+            "paid": false,
+            "amount": 280,
+            "createdAt": "2024-08-27T03:33:37.000Z",
+            "updatedAt": "2024-08-27T03:33:37.000Z"
+        },
+        {
+            "id": 208,
+            "userID": 19,
+            "duedate": "2024-09-03T04:32:21.000Z",
+            "total": 70,
+            "paid": false,
+            "amount": 50,
+            "createdAt": "2024-08-27T04:32:23.000Z",
+            "updatedAt": "2024-08-27T04:32:23.000Z"
+        },
+        {
+            "id": 209,
+            "userID": 3,
+            "duedate": "2024-09-03T21:56:10.000Z",
+            "total": 110,
+            "paid": false,
+            "amount": 110,
+            "createdAt": "2024-08-27T21:56:12.000Z",
+            "updatedAt": "2024-08-27T21:56:12.000Z"
+        }
+    ],
+    "Users": [
+        {
+            "id": 1,
+            "name": "Admin",
+            "total": null,
+            "username": "Admin",
+            "password": "$2a$10$qoa.9deHfqUrX7M147qWIemXB4QZy91iW4v15ZdiAFPcvVpbxpL9.",
+            "UserAdmin": 1,
+            "createdAt": "2024-08-05T10:32:39.000Z",
+            "updatedAt": "2024-08-05T10:32:39.000Z"
+        },
+        {
+            "id": 2,
+            "name": "Ayla",
+            "total": 1880,
+            "username": "Ayla",
+            "password": "",
+            "UserAdmin": null,
+            "createdAt": "2024-08-05T10:32:39.000Z",
+            "updatedAt": "2024-08-27T21:57:08.000Z"
+        },
+        {
+            "id": 3,
+            "name": "Logan",
+            "total": 110,
+            "username": "Logan",
+            "password": "",
+            "UserAdmin": null,
+            "createdAt": "2024-08-05T10:48:00.000Z",
+            "updatedAt": "2024-08-27T21:56:12.000Z"
+        },
+        {
+            "id": 4,
+            "name": "Matt",
+            "total": 0,
+            "username": "Matt",
+            "password": "",
+            "UserAdmin": null,
+            "createdAt": "2024-08-05T10:48:00.000Z",
+            "updatedAt": "2024-08-05T10:48:00.000Z"
+        },
+        {
+            "id": 5,
+            "name": "LoganIT",
+            "total": 80,
+            "username": "LoganIT",
+            "password": "$2a$10$Yfv9aFXinWjpqvJwr6E7JeYW/qoABYuwYFUtDdYoBKpIRG38vfNz6",
+            "UserAdmin": null,
+            "createdAt": "2024-08-05T10:48:00.000Z",
+            "updatedAt": "2024-08-15T00:45:14.000Z"
+        },
+        {
+            "id": 6,
+            "name": "Vicki",
+            "total": 0,
+            "username": "Vicki",
+            "password": "$2a$10$WCHPR/hE..yfgdc2huDNo.yCdRHbp.f7c9O1gRp71JfW/upx0gbGS",
+            "UserAdmin": null,
+            "createdAt": "2024-08-05T10:48:00.000Z",
+            "updatedAt": "2024-08-05T10:48:00.000Z"
+        },
+        {
+            "id": 7,
+            "name": "Keegan",
+            "total": 0,
+            "username": "Keegan",
+            "password": "$2a$10$EnoG5s0.vFw6rWauratOzOAswAV1VlvNVnXVy4iPnALzalulNtE.q",
+            "UserAdmin": null,
+            "createdAt": "2024-08-05T10:48:00.000Z",
+            "updatedAt": "2024-08-21T05:57:30.000Z"
+        },
+        {
+            "id": 8,
+            "name": "Jordan",
+            "total": 0,
+            "username": "Jordan",
+            "password": "",
+            "UserAdmin": null,
+            "createdAt": "2024-08-05T10:48:00.000Z",
+            "updatedAt": "2024-08-25T08:39:20.000Z"
+        },
+        {
+            "id": 9,
+            "name": "John",
+            "total": 0,
+            "username": "John",
+            "password": "$2a$10$UhW6iqsTBfKE/k8iOmYIC.ec3Q3NcLprjUblrw0yQFnyuQhhnhsp.",
+            "UserAdmin": null,
+            "createdAt": "2024-08-05T10:48:00.000Z",
+            "updatedAt": "2024-08-05T10:48:00.000Z"
+        },
+        {
+            "id": 10,
+            "name": "Test",
+            "total": 0,
+            "username": "Test",
+            "password": "",
+            "UserAdmin": null,
+            "createdAt": "2024-08-05T10:48:00.000Z",
+            "updatedAt": "2024-08-05T11:34:47.000Z"
+        },
+        {
+            "id": 11,
+            "name": "Marg",
+            "total": 110,
+            "username": "Marg",
+            "password": "",
+            "UserAdmin": null,
+            "createdAt": "2024-08-05T10:48:00.000Z",
+            "updatedAt": "2024-08-22T07:01:30.000Z"
+        },
+        {
+            "id": 15,
+            "name": "Finn",
+            "total": 0,
+            "username": "Finn",
+            "password": "$2a$10$CC7thAjgAP7EnrOYEfyrjeUH/ADF4hk/CVX0Xasr77hlfUW6oIDqm",
+            "UserAdmin": 0,
+            "createdAt": "2024-08-05T10:48:00.000Z",
+            "updatedAt": "2024-08-05T10:48:00.000Z"
+        },
+        {
+            "id": 16,
+            "name": "Leo",
+            "total": 280,
+            "username": "Leo",
+            "password": "$2a$10$SWSy.FHGobQ6pVejT64wpeVIDEFzQPcozBmaswb3qymm0v62vPvve",
+            "UserAdmin": 0,
+            "createdAt": "2024-08-05T10:48:00.000Z",
+            "updatedAt": "2024-08-27T03:33:37.000Z"
+        },
+        {
+            "id": 17,
+            "name": "Brent",
+            "total": 40,
+            "username": "Brent",
+            "password": "$2a$10$CqlD5XS0nDbVYp20A5UVtuQ4ZrPj3oUU1tTJdM8I7QutwUHbp0CNu",
+            "UserAdmin": 0,
+            "createdAt": "2024-08-05T10:48:00.000Z",
+            "updatedAt": "2024-08-20T20:41:49.000Z"
+        },
+        {
+            "id": 18,
+            "name": "Ashton",
+            "total": 315,
+            "username": "Ashton",
+            "password": "$2a$10$1w.Rx90h5iYcRZuHC/k1m.nnhyZDPIZnSMWwlWaaIm3OPfuo0bulq",
+            "UserAdmin": 0,
+            "createdAt": "2024-08-05T10:48:00.000Z",
+            "updatedAt": "2024-08-19T05:53:29.000Z"
+        },
+        {
+            "id": 19,
+            "name": "Eric",
+            "total": 70,
+            "username": "Eric",
+            "password": "$2a$10$bY4/Ym/DPJRlnfdtTbAHa.fMv8ZGo.NWRVq99HlTHLxDWzois.qhC",
+            "UserAdmin": 0,
+            "createdAt": "2024-08-05T11:09:32.000Z",
+            "updatedAt": "2024-08-27T04:32:23.000Z"
+        }
+    ],
+    "Payments": [
+        {
+            "id": 1,
+            "userID": 8,
+            "debtID": 8,
+            "amount": 20,
+            "createdAt": "2024-02-28T23:33:03.000Z",
+            "updatedAt": "2024-02-28T23:33:03.000Z"
+        },
+        {
+            "id": 2,
+            "userID": 3,
+            "debtID": 1,
+            "amount": 40,
+            "createdAt": "2024-02-29T05:11:22.000Z",
+            "updatedAt": "2024-02-29T05:11:22.000Z"
+        },
+        {
+            "id": 3,
+            "userID": 3,
+            "debtID": 1,
+            "amount": 40,
+            "createdAt": "2024-02-29T05:11:31.000Z",
+            "updatedAt": "2024-02-29T05:11:31.000Z"
+        },
+        {
+            "id": 7,
+            "userID": 2,
+            "debtID": 10,
+            "amount": 10,
+            "createdAt": "2024-03-04T04:11:29.000Z",
+            "updatedAt": "2024-03-04T04:11:29.000Z"
+        },
+        {
+            "id": 10,
+            "userID": 3,
+            "debtID": 2,
+            "amount": 90,
+            "createdAt": "2024-03-07T02:52:42.000Z",
+            "updatedAt": "2024-03-07T02:52:42.000Z"
+        },
+        {
+            "id": 11,
+            "userID": 2,
+            "debtID": 32,
+            "amount": 10,
+            "createdAt": "2024-03-08T22:56:48.000Z",
+            "updatedAt": "2024-03-08T22:56:48.000Z"
+        },
+        {
+            "id": 12,
+            "userID": 8,
+            "debtID": 8,
+            "amount": 20,
+            "createdAt": "2024-03-08T23:47:06.000Z",
+            "updatedAt": "2024-03-08T23:47:06.000Z"
+        },
+        {
+            "id": 13,
+            "userID": 8,
+            "debtID": 8,
+            "amount": 20,
+            "createdAt": "2024-03-08T23:47:52.000Z",
+            "updatedAt": "2024-03-08T23:47:52.000Z"
+        },
+        {
+            "id": 14,
+            "userID": 3,
+            "debtID": 2,
+            "amount": 42,
+            "createdAt": "2024-03-13T03:44:16.000Z",
+            "updatedAt": "2024-03-13T03:44:16.000Z"
+        },
+        {
+            "id": 15,
+            "userID": 5,
+            "debtID": 30,
+            "amount": 40,
+            "createdAt": "2024-03-14T05:01:58.000Z",
+            "updatedAt": "2024-03-14T05:01:58.000Z"
+        },
+        {
+            "id": 16,
+            "userID": 8,
+            "debtID": 47,
+            "amount": 50,
+            "createdAt": "2024-03-19T03:18:09.000Z",
+            "updatedAt": "2024-03-19T03:18:09.000Z"
+        },
+        {
+            "id": 17,
+            "userID": 3,
+            "debtID": 2,
+            "amount": 52,
+            "createdAt": "2024-03-19T20:03:49.000Z",
+            "updatedAt": "2024-03-19T20:03:49.000Z"
+        },
+        {
+            "id": 18,
+            "userID": 4,
+            "debtID": 50,
+            "amount": 370,
+            "createdAt": "2024-03-20T22:13:27.000Z",
+            "updatedAt": "2024-03-20T22:13:27.000Z"
+        },
+        {
+            "id": 19,
+            "userID": 8,
+            "debtID": 47,
+            "amount": 20,
+            "createdAt": "2024-03-21T01:50:07.000Z",
+            "updatedAt": "2024-03-21T01:50:07.000Z"
+        },
+        {
+            "id": 20,
+            "userID": 5,
+            "debtID": 30,
+            "amount": 30,
+            "createdAt": "2024-03-23T01:35:48.000Z",
+            "updatedAt": "2024-03-23T01:35:48.000Z"
+        },
+        {
+            "id": 21,
+            "userID": 2,
+            "debtID": 45,
+            "amount": 20,
+            "createdAt": "2024-03-23T01:44:38.000Z",
+            "updatedAt": "2024-03-23T01:44:38.000Z"
+        },
+        {
+            "id": 22,
+            "userID": 3,
+            "debtID": 2,
+            "amount": 130,
+            "createdAt": "2024-03-26T22:28:12.000Z",
+            "updatedAt": "2024-03-26T22:28:12.000Z"
+        },
+        {
+            "id": 23,
+            "userID": 5,
+            "debtID": 46,
+            "amount": 50,
+            "createdAt": "2024-03-28T21:02:28.000Z",
+            "updatedAt": "2024-03-28T21:02:28.000Z"
+        },
+        {
+            "id": 24,
+            "userID": 8,
+            "debtID": 47,
+            "amount": 20,
+            "createdAt": "2024-03-29T01:35:00.000Z",
+            "updatedAt": "2024-03-29T01:35:00.000Z"
+        },
+        {
+            "id": 25,
+            "userID": 3,
+            "debtID": 2,
+            "amount": 6,
+            "createdAt": "2024-04-03T22:18:53.000Z",
+            "updatedAt": "2024-04-03T22:18:53.000Z"
+        },
+        {
+            "id": 26,
+            "userID": 3,
+            "debtID": 7,
+            "amount": 16,
+            "createdAt": "2024-04-03T22:20:06.000Z",
+            "updatedAt": "2024-04-03T22:20:06.000Z"
+        },
+        {
+            "id": 27,
+            "userID": 10,
+            "debtID": 64,
+            "amount": 10,
+            "createdAt": "2024-04-03T22:44:57.000Z",
+            "updatedAt": "2024-04-03T22:44:57.000Z"
+        },
+        {
+            "id": 28,
+            "userID": 10,
+            "debtID": 64,
+            "amount": 5,
+            "createdAt": "2024-04-03T22:46:12.000Z",
+            "updatedAt": "2024-04-03T22:46:12.000Z"
+        },
+        {
+            "id": 29,
+            "userID": 10,
+            "debtID": 65,
+            "amount": 10,
+            "createdAt": "2024-04-03T22:51:40.000Z",
+            "updatedAt": "2024-04-03T22:51:40.000Z"
+        },
+        {
+            "id": 30,
+            "userID": 10,
+            "debtID": 65,
+            "amount": 5,
+            "createdAt": "2024-04-03T22:53:26.000Z",
+            "updatedAt": "2024-04-03T22:53:26.000Z"
+        },
+        {
+            "id": 31,
+            "userID": 10,
+            "debtID": 65,
+            "amount": 2,
+            "createdAt": "2024-04-03T22:58:03.000Z",
+            "updatedAt": "2024-04-03T22:58:03.000Z"
+        },
+        {
+            "id": 32,
+            "userID": 10,
+            "debtID": 65,
+            "amount": 1,
+            "createdAt": "2024-04-03T22:58:21.000Z",
+            "updatedAt": "2024-04-03T22:58:21.000Z"
+        },
+        {
+            "id": 33,
+            "userID": 3,
+            "debtID": 7,
+            "amount": 42,
+            "createdAt": "2024-04-11T05:11:39.000Z",
+            "updatedAt": "2024-04-11T05:11:39.000Z"
+        },
+        {
+            "id": 34,
+            "userID": 5,
+            "debtID": 46,
+            "amount": 10,
+            "createdAt": "2024-04-12T03:04:38.000Z",
+            "updatedAt": "2024-04-12T03:04:38.000Z"
+        },
+        {
+            "id": 35,
+            "userID": 3,
+            "debtID": 7,
+            "amount": 42,
+            "createdAt": "2024-04-17T02:13:13.000Z",
+            "updatedAt": "2024-04-17T02:13:13.000Z"
+        },
+        {
+            "id": 36,
+            "userID": 2,
+            "debtID": 74,
+            "amount": 50,
+            "createdAt": "2024-04-19T01:14:35.000Z",
+            "updatedAt": "2024-04-19T01:14:35.000Z"
+        },
+        {
+            "id": 37,
+            "userID": 2,
+            "debtID": 75,
+            "amount": 30,
+            "createdAt": "2024-04-19T01:16:32.000Z",
+            "updatedAt": "2024-04-19T01:16:32.000Z"
+        },
+        {
+            "id": 38,
+            "userID": 4,
+            "debtID": 80,
+            "amount": 325,
+            "createdAt": "2024-04-22T03:48:12.000Z",
+            "updatedAt": "2024-04-22T03:48:12.000Z"
+        },
+        {
+            "id": 39,
+            "userID": 3,
+            "debtID": 7,
+            "amount": 37,
+            "createdAt": "2024-04-24T03:57:06.000Z",
+            "updatedAt": "2024-04-24T03:57:06.000Z"
+        },
+        {
+            "id": 40,
+            "userID": 3,
+            "debtID": 7,
+            "amount": 5,
+            "createdAt": "2024-04-24T03:59:03.000Z",
+            "updatedAt": "2024-04-24T03:59:03.000Z"
+        },
+        {
+            "id": 41,
+            "userID": 2,
+            "debtID": 86,
+            "amount": 30,
+            "createdAt": "2024-04-26T02:03:46.000Z",
+            "updatedAt": "2024-04-26T02:03:46.000Z"
+        },
+        {
+            "id": 42,
+            "userID": 16,
+            "debtID": 88,
+            "amount": 60,
+            "createdAt": "2024-04-27T02:03:48.000Z",
+            "updatedAt": "2024-04-27T02:03:48.000Z"
+        },
+        {
+            "id": 43,
+            "userID": 16,
+            "debtID": 88,
+            "amount": 100,
+            "createdAt": "2024-05-02T01:07:44.000Z",
+            "updatedAt": "2024-05-02T01:07:44.000Z"
+        },
+        {
+            "id": 44,
+            "userID": 3,
+            "debtID": 7,
+            "amount": 42,
+            "createdAt": "2024-05-02T02:47:34.000Z",
+            "updatedAt": "2024-05-02T02:47:34.000Z"
+        },
+        {
+            "id": 45,
+            "userID": 4,
+            "debtID": 87,
+            "amount": 5,
+            "createdAt": "2024-05-02T06:27:04.000Z",
+            "updatedAt": "2024-05-02T06:27:04.000Z"
+        },
+        {
+            "id": 46,
+            "userID": 5,
+            "debtID": 69,
+            "amount": 5,
+            "createdAt": "2024-05-08T00:44:20.000Z",
+            "updatedAt": "2024-05-08T00:44:20.000Z"
+        },
+        {
+            "id": 47,
+            "userID": 3,
+            "debtID": 7,
+            "amount": 52,
+            "createdAt": "2024-05-08T01:11:32.000Z",
+            "updatedAt": "2024-05-08T01:11:32.000Z"
+        },
+        {
+            "id": 48,
+            "userID": 16,
+            "debtID": 88,
+            "amount": 100,
+            "createdAt": "2024-05-09T07:23:20.000Z",
+            "updatedAt": "2024-05-09T07:23:20.000Z"
+        },
+        {
+            "id": 49,
+            "userID": 5,
+            "debtID": 69,
+            "amount": 40,
+            "createdAt": "2024-05-10T09:22:05.000Z",
+            "updatedAt": "2024-05-10T09:22:05.000Z"
+        },
+        {
+            "id": 50,
+            "userID": 3,
+            "debtID": 7,
+            "amount": 42,
+            "createdAt": "2024-05-15T04:27:45.000Z",
+            "updatedAt": "2024-05-15T04:27:45.000Z"
+        },
+        {
+            "id": 51,
+            "userID": 16,
+            "debtID": 88,
+            "amount": 60,
+            "createdAt": "2024-05-16T23:32:51.000Z",
+            "updatedAt": "2024-05-16T23:32:51.000Z"
+        },
+        {
+            "id": 53,
+            "userID": 7,
+            "debtID": 111,
+            "amount": 60,
+            "createdAt": "2024-05-23T06:33:45.000Z",
+            "updatedAt": "2024-05-23T06:33:45.000Z"
+        },
+        {
+            "id": 55,
+            "userID": 2,
+            "debtID": 119,
+            "amount": 40,
+            "createdAt": "2024-05-27T06:28:28.000Z",
+            "updatedAt": "2024-05-27T06:28:28.000Z"
+        },
+        {
+            "id": 56,
+            "userID": 2,
+            "debtID": 115,
+            "amount": 70,
+            "createdAt": "2024-05-27T06:29:30.000Z",
+            "updatedAt": "2024-05-27T06:29:30.000Z"
+        },
+        {
+            "id": 61,
+            "userID": 5,
+            "debtID": 101,
+            "amount": 5,
+            "createdAt": "2024-05-27T08:55:56.000Z",
+            "updatedAt": "2024-05-27T08:55:56.000Z"
+        },
+        {
+            "id": 62,
+            "userID": 3,
+            "debtID": 7,
+            "amount": 40,
+            "createdAt": "2024-05-28T23:32:33.000Z",
+            "updatedAt": "2024-05-28T23:32:33.000Z"
+        },
+        {
+            "id": 63,
+            "userID": 3,
+            "debtID": 7,
+            "amount": 40,
+            "createdAt": "2024-06-05T01:25:19.000Z",
+            "updatedAt": "2024-06-05T01:25:19.000Z"
+        },
+        {
+            "id": 64,
+            "userID": 2,
+            "debtID": 126,
+            "amount": 80,
+            "createdAt": "2024-06-08T01:39:58.000Z",
+            "updatedAt": "2024-06-08T01:39:58.000Z"
+        },
+        {
+            "id": 65,
+            "userID": 3,
+            "debtID": 7,
+            "amount": 50,
+            "createdAt": "2024-06-12T00:40:39.000Z",
+            "updatedAt": "2024-06-12T00:40:39.000Z"
+        },
+        {
+            "id": 66,
+            "userID": 2,
+            "debtID": 128,
+            "amount": 50,
+            "createdAt": "2024-07-25T05:44:44.000Z",
+            "updatedAt": "2024-07-25T05:44:44.000Z"
+        },
+        {
+            "id": 67,
+            "userID": 5,
+            "debtID": 152,
+            "amount": 80,
+            "createdAt": "2024-07-31T01:43:18.000Z",
+            "updatedAt": "2024-07-31T01:43:18.000Z"
+        },
+        {
+            "id": 68,
+            "userID": 18,
+            "debtID": 176,
+            "amount": 70,
+            "createdAt": "2024-08-13T03:15:05.000Z",
+            "updatedAt": "2024-08-13T03:15:05.000Z"
+        },
+        {
+            "id": 69,
+            "userID": 5,
+            "debtID": 172,
+            "amount": 40,
+            "createdAt": "2024-08-15T00:45:14.000Z",
+            "updatedAt": "2024-08-15T00:45:14.000Z"
+        },
+        {
+            "id": 70,
+            "userID": 2,
+            "debtID": 140,
+            "amount": 30,
+            "createdAt": "2024-08-27T21:57:08.000Z",
+            "updatedAt": "2024-08-27T21:57:08.000Z"
+        }
+    ]
+}

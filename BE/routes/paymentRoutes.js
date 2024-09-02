@@ -28,7 +28,7 @@ router.get('/:id', (req, res) => {
     Controllers.paymentController.getPaymentsByID(req, res);
 })
 
-router.get('/debtpayments/:debtid', (req, res) => {
+router.get('/userpayments/:debtid', (req, res) => {
     Controllers.paymentController.getPaymentsByDebtID(req, res);
 })
 
@@ -48,11 +48,7 @@ router.delete('/delete/:id', (req, res) => {
     Controllers.paymentController.deletePayments(req, res)
 })
 
-router.delete('/debtpayments/:debtid', (req, res) => {
-    Controllers.paymentController.deletePaymentsByDebtID(req, res);
-})
-
-router.delete('/userpayments/:debtid', (req, res) => {
+router.delete('/userpayments/:userid', (req, res) => {
     Controllers.paymentController.deletePaymentsByUserID(req, res);
 })
 

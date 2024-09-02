@@ -3,40 +3,43 @@ const axios = require('axios');
 const Models = require('../models');
 const { Op } = require("sequelize");
 
-const storeVehicles = async () => {
+// const storeData = async (table, body, res) => {
+    const storeData = async (table, res) => {
+    // console.log(body)
+    let response = await axios.get(`http://localhost:3000/${table}/`);
+    // let response = await axios.get(`http://localhost:3000/Debts/`);
     try {
+        const array = response.data;
+        console.log(array)
 
-    let response = await axios.get('https://vpic.nhtsa.dot.gov/api/vehicles/GetMakesForVehicleType/car?format=json')
-    
-        const cars = response.data.Results;
-        console.log(cars)
+        for(let i of array) {
+        //     for (let key in i) {
+        //         if (i[key] === null) {
+        //             i[key] = ''
+        //         }
+        //     }
+        console.log(i.createdAt, i.updatedAt)
 
-        for(let car of cars) {
-        
-
-        const formatCars ={
-            id: car.MakeId,
-            make: car.MakeName,
-            VTN: car.VehicleTypeName
-        
+        const formatObj ={
+            id: i.id,
+            userID: i.userID,
+            debtID: i.debtID,
+            amount: i.amount
         };
 
-        let [newCar, created ] = await Models.Vehicles.findOrCreate({
-            where: {id: car.MakeId},
-            defaults: formatCars
-
+        let [newi, created ] = await Models[table].findOrCreate({
+            where: {id: i.id},
+            defaults: formatObj
         })
-       
-        }
-    } catch (err) {
-        console.log(err.message)
     }
 
+    console.log({message:'Data import complete.'})
+}
+    catch (err) {
+        res.send(err.message)
+    }
 }
 
-
-
-
 module.exports = {
-    storeVehicles
+    storeData
 }

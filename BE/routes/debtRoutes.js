@@ -16,13 +16,15 @@ const postLimiter = rateLimit({
   }); 
 
 router.get('/', (req, res) => { 
-    // router.get('/', getLimiter, (req, res) => { 
     Controllers.debtController.getDebts(req, res);
-    console.log(res.err)
 })
 
-router.get('/test', getLimiter, (req, res) => { 
-    Controllers.dynamicController.getWhatever(req, res);
+router.post('/init', (req, res) => { 
+    if (!res.headersSent) {
+        res.setHeader('Content-Type', 'application/json');  
+        Controllers.initialController.storeData(req.query.table, res);
+    // Controllers.initialController.storeData(req.query.table, req.body[0]?.key, res);
+    }
 })
 
 router.get('/:id', (req, res) => {
@@ -43,6 +45,10 @@ router.put('/put/:id', (req, res) => {
 
 router.delete('/delete/:id', (req, res) => {
     Controllers.debtController.deleteDebts(req, res)
+})
+
+router.delete('/deleteall', (req, res) => {
+    Controllers.debtController.deleteAllDebts(req, res)
 })
 
 router.delete('/userdebts/:userid', (req, res) => {

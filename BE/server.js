@@ -3,20 +3,20 @@ const cors = require("cors");
 require("dotenv").config();
 const http = require('http');
 const socketIo = require("./libraries/socket"); // Import the Socket.IO setup function
-const redis = require("redis"); // Require the redis package
+// const redis = require("redis"); // Require the redis package
 let dbConnect = require("./dbConnect");
 
-var corsOptions = {
-    origin: "http://localhost:5173"
+const corsOptions = {
+    origin: ["http://192.168.1.187:5173", "http://localhost:5173"],
 };
 
 const Controllers = require('./controllers');
 const app = express();
 
-const client = redis.createClient({
-    host: process.env.REDIS_HOST || "127.0.0.1", // Redis server host
-    port: process.env.REDIS_PORT || 6379,       // Redis server port
-});
+// const client = redis.createClient({
+//     host: process.env.REDIS_HOST || "127.0.0.1", // Redis server host
+//     port: process.env.REDIS_PORT || 6379,       // Redis server port
+// });
 
 app.use(cors(corsOptions));
 

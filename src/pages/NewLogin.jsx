@@ -17,7 +17,7 @@ export default function NewLogin() {
     const password = LPassWord;
     try {
       const response = await axios.post(
-        "http://localhost:8063/api/users/login",
+        `${window.location.origin.slice(0,-5)}:8063/api/users/login`,
         { username, password }
       );
       const user = response.data.data.user

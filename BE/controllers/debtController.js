@@ -92,6 +92,14 @@ const deleteDebts = (req, res) => {
     })
 }
 
+const deleteAllDebts = (req, res) => {
+    Models.Debts.destroy({truncate: true,}).then(function (data) {
+        res.send({ result: 200, data: data })
+    }).catch(err => {
+        throw err
+    })
+}
+
 const deleteDebtsByUserID = (req, res) => {
     Models.Debts.destroy({ where: { userid: req.params.userid } }).then(function (data) {
         res.send({ result: 200, data: data })
@@ -123,5 +131,5 @@ const unlockDebts = (req, rest) => {
 }
 
 module.exports = {
-    getDebts, createDebts, updateDebts, deleteDebts, getDebtsByID, getDebtsByUserID, lockDebts, unlockDebts, deleteDebtsByUserID
+    getDebts, createDebts, updateDebts, deleteDebts, getDebtsByID, getDebtsByUserID, lockDebts, unlockDebts, deleteDebtsByUserID, deleteAllDebts
 }

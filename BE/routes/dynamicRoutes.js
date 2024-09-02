@@ -14,6 +14,10 @@ router.get('/', getLimiter, (req, res) => {
     Controllers.getWhatever(req, res);
 })
 
+router.delete('/', (req, res) => {
+    Controllers.dropTables(req, res);
+})
+
 router.get('/:id', (req, res) => {
     Controllers.getWhateverByID(req, res);
 })

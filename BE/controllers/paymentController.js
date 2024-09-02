@@ -25,7 +25,7 @@ const getPayments = (req, res) => {
 //       if (err) {
 //         console.error("Error retrieving cached data:", err);
 //       }
-
+  
 //       if (cachedData !== null) {
 //         // Cached data exists, send cached data
 //         const parsedData = JSON.parse(cachedData);
@@ -43,8 +43,8 @@ const getPayments = (req, res) => {
 //       }
 //     });
 //   };
-
-
+  
+  
 
 const getPaymentsByID = (req, res) => {
     Models.Payments.findAll({ where: { id: req.params.id } }).then(function (data) {
@@ -62,21 +62,13 @@ const getPaymentsByUserID = (req, res) => {
     })
 }
 
-const getPaymentsByDebtID = (req, res) => {
-    Models.Payments.findAll({ where: { debtid: req.params.debtid } }).then(function (data) {
-        res.send({ result: 200, data: data })
-    }).catch(err => {
-        throw err
-    })
-}
-
 const createPayments = (data, res) => {
     Models.Payments.create(data).then(function (data) {
         res.send({ result: 200, data: data })
     }).catch(err => {
         throw err
     })
-}
+} 
 
 const updatePayments = (req, res) => {
     Models.Payments.update(req.body, {
@@ -108,14 +100,6 @@ const deletePaymentsByUserID = (req, res) => {
     })
 }
 
-const deletePaymentsByDebtID = (req, res) => {
-    Models.Payments.destroy({ where: { debtid: req.params.debtid } }).then(function (data) {
-        res.send({ result: 200, data: data })
-    }).catch(err => {
-        throw err
-    })
-}
-
 const lockPayments = (req, rest) => {
     Models.Payments.findAll({
         // const [results, metadata] = await sequelize.query(
@@ -139,8 +123,5 @@ const unlockPayments = (req, rest) => {
 }
 
 module.exports = {
-    getPayments, createPayments, updatePayments,
-    deletePayments, getPaymentsByID, getPaymentsByUserID,
-    lockPayments, unlockPayments, deletePaymentsByUserID,
-    getPaymentsByDebtID, deletePaymentsByDebtID
+    getPayments, createPayments, updatePayments, deletePayments, getPaymentsByID, getPaymentsByUserID, lockPayments, unlockPayments, deletePaymentsByUserID
 }

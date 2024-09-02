@@ -29,12 +29,12 @@ Debts.init({
     },
     amount: {
         type: DataTypes.INTEGER, allowNull: false, required: true
-    },
+    }
 },
     {
-        sequelize: sequelizeInstance, modelName: 'Debts', timestamps: true, freezeTableName: true
+        sequelize: sequelizeInstance, modelName: 'Debts', 
+        timestamps: true, 
+        freezeTableName: true
     }
 )
 module.exports = Debts;
-
-
