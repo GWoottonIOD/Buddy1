@@ -2325,20 +2325,20 @@
             "userID": 3,
             "duedate": "2024-10-10T09:45:18.000Z",
             "total": 310,
-            "paid": false,
+            "paid": true,
             "amount": 110,
             "createdAt": "2024-10-03T09:45:20.000Z",
-            "updatedAt": "2024-10-03T09:45:20.000Z"
+            "updatedAt": "2024-10-09T01:27:05.000Z"
         },
         {
             "id": 262,
             "userID": 3,
             "duedate": "2024-10-11T02:45:28.000Z",
             "total": 350,
-            "paid": false,
+            "paid": true,
             "amount": 40,
             "createdAt": "2024-10-04T02:45:29.000Z",
-            "updatedAt": "2024-10-04T02:45:29.000Z"
+            "updatedAt": "2024-10-09T01:27:05.000Z"
         },
         {
             "id": 263,
@@ -2355,10 +2355,10 @@
             "userID": 3,
             "duedate": "2024-10-14T20:08:07.000Z",
             "total": 220,
-            "paid": false,
+            "paid": true,
             "amount": 20,
             "createdAt": "2024-10-07T20:08:10.000Z",
-            "updatedAt": "2024-10-07T20:08:10.000Z"
+            "updatedAt": "2024-10-09T01:27:06.000Z"
         },
         {
             "id": 265,
@@ -2369,6 +2369,26 @@
             "amount": 300,
             "createdAt": "2024-10-07T20:08:36.000Z",
             "updatedAt": "2024-10-07T20:08:36.000Z"
+        },
+        {
+            "id": 266,
+            "userID": 3,
+            "duedate": "2024-10-16T01:27:13.000Z",
+            "total": 150,
+            "paid": false,
+            "amount": 150,
+            "createdAt": "2024-10-09T01:27:14.000Z",
+            "updatedAt": "2024-10-09T01:27:14.000Z"
+        },
+        {
+            "id": 267,
+            "userID": 7,
+            "duedate": "2024-10-17T05:31:39.000Z",
+            "total": 430,
+            "paid": false,
+            "amount": 110,
+            "createdAt": "2024-10-10T05:31:41.000Z",
+            "updatedAt": "2024-10-10T05:31:41.000Z"
         }
     ],
     "Users": [

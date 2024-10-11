@@ -5,35 +5,31 @@ const { Op } = require("sequelize");
 
 // const storeData = async (table, body, res) => {
     const storeData = async (table, res) => {
-    // console.log(body)
-    let response = await axios.get(`http://localhost:3000/${table}/`);
-    // let response = await axios.get(`http://localhost:3000/Debts/`);
+    let response = await axios.get(`http://localhost:3000/${table.slice(0,1).toUpperCase() + table.slice(1)}/`); //The Models are in uppercase
     try {
-        const array = response.data;
-        console.log(array)
+        //response from the JSON-server
+        const array = response.data; 
 
         for(let i of array) {
-        //     for (let key in i) {
-        //         if (i[key] === null) {
-        //             i[key] = ''
-        //         }
-        //     }
-        console.log(i.createdAt, i.updatedAt)
 
-        const formatObj ={
-            id: i.id,
-            userID: i.userID,
-            debtID: i.debtID,
-            amount: i.amount
-        };
+        let formatObj;
 
+        //Works out what the keys of the object are dynamically.
+        for (let j of Object.keys(i)) { 
+            formatObj = {
+                ...formatObj,
+                j: i
+            }
+        }
+
+        //find or create an entry in the table if the entry doesn't exist.
         let [newi, created ] = await Models[table].findOrCreate({
             where: {id: i.id},
             defaults: formatObj
         })
     }
 
-    console.log({message:'Data import complete.'})
+    res.send({message:'Data import complete.'})
 }
     catch (err) {
         res.send(err.message)
