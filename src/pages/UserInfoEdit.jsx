@@ -65,7 +65,7 @@ return (
                         <div><TextField type='text' key={user.username} onChange={e => setUsername(e.target.value)} defaultValue={user.username} label="Username"></TextField></div><br></br>
                         {/* <div><TextField type='password' onChange={e => setPassword(e.target.value)} label="Password"></TextField></div><br></br> */}
                             {/* <div><TextField type='password' onChange={e => setVPassword(e.target.value)} label="Password"></TextField></div><br></br> */}
-                        <Button onClick={() => setPassword('')}>Reset Password</Button><br />
+                        <Button onClick={() => setPassword('Pass1')}>Reset Password</Button><br />
                         <Button onClick={() => { 
                             updateQuery('users', updateUser)
                             .then(navigate('/users'))
