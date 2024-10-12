@@ -1,16 +1,15 @@
 const express = require("express");
-const cors = require("cors");
+const cors = require("./libraries/cors");
 require("dotenv").config();
 const http = require('http');
 const socketIo = require("./libraries/socket"); // Import the Socket.IO setup function
 // const redis = require("redis"); // Require the redis package
 let dbConnect = require("./dbConnect");
 
-const corsOptions = {
-    origin: ["http://192.168.1.187:5173", "http://localhost:5173"],
-};
+// const corsOptions = {
+//     origin: ["http://192.168.1.55:5173", "http://localhost:5173"],
+// };
 
-const Controllers = require('./controllers');
 const app = express();
 
 // const client = redis.createClient({
@@ -18,13 +17,16 @@ const app = express();
 //     port: process.env.REDIS_PORT || 6379,       // Redis server port
 // });
 
-app.use(cors(corsOptions));
+app.use(cors);
 
 const server = http.createServer(app);
 const io = socketIo(server); // Initialize Socket.IO using the imported function
 
 // parse requests of content-type - application/json
 app.use(express.json());
+
+let secureRoutes = require('./routes/secureRoutes');
+app.use('/api/secure', secureRoutes);
 
 let debtRoutes = require('./routes/debtRoutes');
 app.use('/api/debts', debtRoutes);
