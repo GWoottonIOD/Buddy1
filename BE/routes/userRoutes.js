@@ -35,8 +35,12 @@ router.put('/put/:id', (req, res) => {
     Controllers.validatePasswordOfUser(req, res)
 })
 
-router.delete('/delete/:id', (req, res) => {
+router.delete('/deleteall', (req, res) => {
     Controllers.deleteUsers(req, res)
+})
+
+router.delete('/delete/:id', (req, res) => {
+    Controllers.deleteUserById(req, res)
 })
 
 

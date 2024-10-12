@@ -93,7 +93,7 @@ const deleteDebts = (req, res) => {
 }
 
 const deleteAllDebts = (req, res) => {
-    Models.Debts.destroy({truncate: true,}).then(function (data) {
+    Models.Debts.truncate().then(function (data) {
         res.send({ result: 200, data: data })
     }).catch(err => {
         throw err

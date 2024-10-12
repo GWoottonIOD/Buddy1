@@ -80,10 +80,18 @@ const updateUsers = async (req, res) => {
         throw err
     })
 }
-const deleteUsers = (req, res) => {
+const deleteUserById = (req, res) => {
     Models.Users.destroy({
         where: { id: req.params.id }
     }).then(function (data) {
+        res.send({ result: 200, data: data })
+    }).catch(err => {
+        throw err
+    })
+}
+
+const deleteUsers = (req, res) => {
+    Models.Users.truncate().then(function (data) {
         res.send({ result: 200, data: data })
     }).catch(err => {
         throw err
@@ -138,5 +146,5 @@ const loginUser = (req, res) => {
 
 
 module.exports = {
-    getUsers, validatePasswordOfUser, updateUsers, deleteUsers, getUsersByID, loginUser
+    getUsers, validatePasswordOfUser, updateUsers, deleteUserById, deleteUsers, getUsersByID, loginUser
 }

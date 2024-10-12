@@ -5,6 +5,7 @@ const { Op } = require("sequelize");
 
 // const storeData = async (table, body, res) => {
     const storeData = async (table, res) => {
+        console.log(table.slice(0,1).toUpperCase() + table.slice(1))
     let response = await axios.get(`http://localhost:3000/${table.slice(0,1).toUpperCase() + table.slice(1)}/`); //The Models are in uppercase
     try {
         //response from the JSON-server
@@ -12,20 +13,18 @@ const { Op } = require("sequelize");
 
         for(let i of array) {
 
-        let formatObj;
-
-        //Works out what the keys of the object are dynamically.
-        for (let j of Object.keys(i)) { 
-            formatObj = {
-                ...formatObj,
-                j: i
-            }
-        }
+        // //Works out what the keys of the object are dynamically.
+        // for (let g of Object.keys(i)) { 
+        //     formatObj = {
+        //         ...formatObj,
+        //         g: i
+        //     }
+        // }
 
         //find or create an entry in the table if the entry doesn't exist.
-        let [newi, created ] = await Models[table].findOrCreate({
+        let [newi, created ] = await Models[table.slice(0,1).toUpperCase() + table.slice(1)].findOrCreate({
             where: {id: i.id},
-            defaults: formatObj
+            defaults: i
         })
     }
 

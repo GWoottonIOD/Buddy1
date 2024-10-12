@@ -44,8 +44,12 @@ router.put('/put/:id', (req, res) => {
     Controllers.paymentController.updatePayments(req, res)
 })
 
-router.delete('/delete/:id', (req, res) => {
+router.delete('/deleteall', (req, res) => {
     Controllers.paymentController.deletePayments(req, res)
+})
+
+router.delete('/delete/:id', (req, res) => {
+    Controllers.paymentController.deletePaymentByID(req, res)
 })
 
 router.delete('/userpayments/:userid', (req, res) => {

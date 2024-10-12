@@ -82,10 +82,18 @@ const updatePayments = (req, res) => {
         throw err
     })
 }
-const deletePayments = (req, res) => {
+const deletePaymentByID = (req, res) => {
     Models.Payments.destroy({
         where: { id: req.params.id }
     }).then(function (data) {
+        res.send({ result: 200, data: data })
+    }).catch(err => {
+        throw err
+    })
+}
+
+const deletePayments = (req, res) => {
+    Models.Payments.truncate().then(function (data) {
         res.send({ result: 200, data: data })
     }).catch(err => {
         throw err
@@ -123,5 +131,5 @@ const unlockPayments = (req, rest) => {
 }
 
 module.exports = {
-    getPayments, createPayments, updatePayments, deletePayments, getPaymentsByID, getPaymentsByUserID, lockPayments, unlockPayments, deletePaymentsByUserID
+    getPayments, createPayments, updatePayments, deletePayments, deletePaymentByID, getPaymentsByID, getPaymentsByUserID, lockPayments, unlockPayments, deletePaymentsByUserID
 }
