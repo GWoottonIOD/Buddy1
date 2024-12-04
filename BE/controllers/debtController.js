@@ -62,6 +62,27 @@ const getDebtsByUserID = (req, res) => {
     })
 }
 
+const postPaidDebtsByUserID = (req, res) => {
+    Models.Debts.findAll({ where: { userid: req.params.userid, paid: true }}).then(function (data) {
+        Models.Payments.create(data).then(function (data) {
+            res.send({ result: 200, data: data })
+        }).catch(err => {
+            throw err
+        })
+    }).catch(err => {
+        throw err
+    })
+}
+
+
+const getPaidDebtsByUserID = (req, res) => {
+    Models.Debts.findAll({ where: { userid: req.params.userid, paid: true }}).then(function (data) {
+        res.send({ result: 200, data: data })
+    }).catch(err => {
+        throw err
+    })
+}
+
 const createDebts = (data, res) => {
     Models.Debts.create(data).then(function (data) {
         res.send({ result: 200, data: data })
@@ -131,5 +152,5 @@ const unlockDebts = (req, rest) => {
 }
 
 module.exports = {
-    getDebts, createDebts, updateDebts, deleteDebts, getDebtsByID, getDebtsByUserID, lockDebts, unlockDebts, deleteDebtsByUserID, deleteAllDebts
+    getDebts, createDebts, updateDebts, deleteDebts, getDebtsByID, getDebtsByUserID, lockDebts, unlockDebts, deleteDebtsByUserID, deleteAllDebts, getPaidDebtsByUserID, postPaidDebtsByUserID
 }

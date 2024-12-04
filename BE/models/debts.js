@@ -29,11 +29,17 @@ Debts.init({
     },
     amount: {
         type: DataTypes.INTEGER, allowNull: false, required: true
-    }
+    },
+    createdAt: {
+        type: DataTypes.DATE, allowNull: true, required: false
+    },
+    updatedAt: {
+        type: DataTypes.DATE, allowNull: true, required: false
+    },
 },
     {
         sequelize: sequelizeInstance, modelName: 'Debts', 
-        timestamps: true, 
+        timestamps: false, 
         freezeTableName: true
     }
 )

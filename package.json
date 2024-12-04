@@ -7,8 +7,9 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
+    "server": "cd ./BE && npm start",
     "preview": "vite preview",
-    "host": "vite --host",
+    "host": "concurrently \"vite --host\" \"npm run server\"",
     "ionic:build": "npm run build",
     "ionic:serve": "vite dev --host"
   },

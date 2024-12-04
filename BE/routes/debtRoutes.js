@@ -35,6 +35,14 @@ router.get('/userdebts/:userid', (req, res) => {
     Controllers.debtController.getDebtsByUserID(req, res);
 })
 
+router.get('/userpaid/:userid', (req, res) => {
+    Controllers.debtController.getPaidDebtsByUserID(req, res);
+})
+
+router.post('/postuserpaid/:userid', (req, res) => {
+    Controllers.debtController.postPaidDebtsByUserID(req, res);
+})
+
 router.post('/create', postLimiter, (req, res) => {
     Controllers.debtController.createDebts(req.body, res)
 })

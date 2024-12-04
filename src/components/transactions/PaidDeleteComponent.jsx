@@ -5,7 +5,7 @@ import DoneIcon from '@mui/icons-material/Done';
 import EditIcon from '@mui/icons-material/Edit';
 import { DebtContext } from '../../context/DebtContext';
 import DraggableDialog from '../editTransaction/DraggableDialog';
-import { updateQuery, readQuery, deleteQuery } from '../../axios/AxiosFunctions';
+import { updateQuery, readQuery, deleteQuery, createQuery } from '../../axios/AxiosFunctions';
 
 export default function PaidDeleteComponent({ debt }) {
     const { setDebts, debts } = useContext(DebtContext);
@@ -19,6 +19,7 @@ export default function PaidDeleteComponent({ debt }) {
                     readQuery('users', debt.userID )
                     .then((response) => updateQuery('users', { 'id': debt.userID, 'total': parseInt(response[0].total - debt.amount) }))
                     .then(() => updateQuery('debts', { 'id': debt.id, 'paid': true }))
+                    .then(() => createQuery('payments', { 'debtID': debt.id, 'userID': debt.userID, 'amount': debt.amount }))
                     .then(() => setDebts(debts.filter((transaction) => transaction.id !== debt.id)))
                 }
                 sx={{'&&:focus': {outline: 'none'}}}><DoneIcon/>
