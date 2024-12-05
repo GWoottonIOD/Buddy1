@@ -39,7 +39,7 @@ Debts.init({
 },
     {
         sequelize: sequelizeInstance, modelName: 'Debts', 
-        timestamps: false, 
+        timestamps: true, 
         freezeTableName: true
     }
 )
