@@ -16,6 +16,22 @@ const getWhatever = (req, res) => {
     })
 }
 
+const getWhateverByWhatever = (req, res) => {
+    const modelName = req.query.whatever
+    const filter = req.query.filter
+    const Model = Models[modelName]
+    console.log(Models)
+
+    if (!Model) {
+        return res.status(400).send({ result: 400, error: 'Invalid model name' });
+    }
+    Model.findAll({ where: { filter: req.params.id } }).then(function (data) {
+        res.send({ result: 200, data: data })
+    }).catch(err => {
+        throw err
+    })
+}
+
 const getWhateverByID = (req, res) => {
     const modelName = req.query.whatever
     const Model = Models[modelName]

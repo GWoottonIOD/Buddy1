@@ -22,9 +22,7 @@ export default function ChangeAmount(props) {
                     <br />
                     <Button onClick={() => props.setAmount(80)}>80</Button>
                     <br />
-                    <Button onClick={() => props.setAmount(110)}>110</Button>
-                    <br />
-                    <Button onClick={() => props.setAmount(120)}>120</Button>
+                    <Button onClick={() => props.setAmount(100)}>100</Button>
                     <br />
                 </>
             )}

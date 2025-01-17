@@ -8,12 +8,16 @@ import { VariableHolder } from '../context/VariableContext';
 import AppRoutes from '../routes/AppRoutes';
 import Navbar from '../NavBar';
 import Footer from '../Footer';
+import { PaymentContextHolder } from './PaymentContext';
+import { CacheContextHolder } from './CachedDataContext';
 
 export default function AppContext() {
     return (
       <CurrentUserHolder>
+        <CacheContextHolder>
         <PageTypeHolder>
           <DebtContextHolder>
+            <PaymentContextHolder>
             <SearchHolder>
               <UserContextHolder>
                 <VariableHolder>
@@ -23,8 +27,10 @@ export default function AppContext() {
                 </VariableHolder>
               </UserContextHolder>
             </SearchHolder>
+            </PaymentContextHolder>
           </DebtContextHolder>
         </PageTypeHolder>
+        </CacheContextHolder>
       </CurrentUserHolder>
   )
 }

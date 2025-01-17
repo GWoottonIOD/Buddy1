@@ -13,6 +13,7 @@ import ChatApp from '../pages/Chat';
 import ProtectedRoute from './ProtectedRoute';
 import SeedFlower from '../pages/SeedFlower';
 import { NewUser } from '../pages/UserNew';
+import PaymentHome from '../pages/PaymentHome';
 
 
 export default function AppRoutes() {
@@ -31,6 +32,7 @@ export default function AppRoutes() {
                 <Route path='/ani' element={<ProtectedRoute><Theme component={<SeedFlower />} /></ProtectedRoute>} />
                 <Route path='/chat' element={<ProtectedRoute><Theme component={<ChatApp />} /></ProtectedRoute>} />
                 <Route path='/' element={<ProtectedRoute><Theme component={<DebtHome />} /></ProtectedRoute>} />
+                <Route path='/payments' element={<ProtectedRoute><Theme component={<PaymentHome />} /></ProtectedRoute>} />
                 <Route path='/profile' element={<ProtectedRoute><Theme component={<Profile />} /></ProtectedRoute>} />
                 <Route path='/pna' element={<Theme component={<PageNotAllowed />} />} />
             </Routes>

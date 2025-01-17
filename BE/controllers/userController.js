@@ -2,6 +2,7 @@
 const Models = require("../models");
 const bcrypt = require('bcryptjs')
 const jwt = require("jsonwebtoken"); // CommonJS syntax
+require("dotenv").config();
 
 const getUsers = (req, res) => {
     Models.Users.findAll({}).then(function (data) {
@@ -120,7 +121,7 @@ const loginUser = (req, res) => {
             // If the user exists and the password is correct, send the user data as a response
             if (user && (await bcrypt.compare(req.body.password, user.password))) {
                 // Replace "your-secret-key" with your actual secret key
-                const secretKey = "817960";
+                const secretKey = process.env.JWT_SECRET;
 
                 // Create a payload with user information
                 const payload = {

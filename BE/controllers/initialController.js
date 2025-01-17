@@ -27,7 +27,7 @@ const { Op } = require("sequelize");
 
         // const formatObj = {
         //     debtID: i.id,
-        //     userID: i.userID,
+        //     userID: i.userID,          
         //     amount: i.amount,
         //     updatedAt: i.updatedAt,
         // }

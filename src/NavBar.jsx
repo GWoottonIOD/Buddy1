@@ -15,6 +15,7 @@ const Navbar = () => {
   const location = useLocation();
   const users = <NavLink id="link" to='/users' exact="true" forcerefresh="true">Users</NavLink>
   const debts = <NavLink id="link" to='/' exact="true" forcerefresh="true">Transactions</NavLink>
+  const payments = <NavLink id="link" to='/payments' exact="true" forcerefresh="true">Payments</NavLink>
   const chats = <NavLink id="link" to='/chat' exact="true" forcerefresh="true">Chat</NavLink>
   const clear = <NavLink onClick={() => setQuery({query: '', doISearch: !query.doISearch})} outline='none' ><ClearIcon id="link" sx={{ mr: 2 }} /></NavLink>
   const search = <NavLink onClick={() => setQuery({query: query.query, doISearch: !query.doISearch})} outline='none' ><SearchIcon id="link" sx={{ mr: 2 }} /></NavLink>
@@ -28,6 +29,7 @@ const Navbar = () => {
           <Typography variant="h6" color="inherit" noWrap id="toolItems">
             {currentUser.username && currentUser.UserAdmin && pathname !== '/users' ? users : null}
             {currentUser.username && pathname !== '/' ? debts : null}
+            {currentUser.username && pathname !== '/payments' ? payments : null}
             {pathname == '/profile' || pathname == '/login'? null : <>{currentUser.username?<NavLink id="link" to='/profile'>{currentUser.username}</NavLink>: null}</> }
             {currentUser.username ? chats: null}
             {currentUser.username && currentUser.UserAdmin ? query.doISearch ? clear : search : 'Welcome'}

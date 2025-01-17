@@ -19,6 +19,8 @@ const getDebts = (req, res) => {
     })
 }
 
+//JWTTOKEN!
+
 // const getDebts = (req, res) => {
 //     // Check if data exists in the cache
 //     redisClient.get("debts", (err, cachedData) => {
