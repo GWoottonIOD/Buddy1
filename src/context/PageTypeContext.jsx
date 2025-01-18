@@ -20,4 +20,4 @@ export const PageTypeHolder = (props) => {
 
 export const usePageTypeContext = () => {
     return useContext(PageTypeContext);
-  };x
+  };
