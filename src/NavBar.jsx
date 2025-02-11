@@ -31,7 +31,7 @@ const Navbar = () => {
             {currentUser.username && pathname !== '/' ? debts : null}
             {currentUser.username && pathname !== '/payments' ? payments : null}
             {pathname == '/profile' || pathname == '/login'? null : <>{currentUser.username?<NavLink id="link" to='/profile'>{currentUser.username}</NavLink>: null}</> }
-            {currentUser.username ? chats: null}
+            {/* {currentUser.username ? chats: null} */}
             {currentUser.username && currentUser.UserAdmin ? query.doISearch ? clear : search : 'Welcome'}
           </Typography>
         </Toolbar>
