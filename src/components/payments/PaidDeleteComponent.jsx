@@ -3,7 +3,7 @@ import { Button } from '@mui/material'
 import ClearIcon from '@mui/icons-material/Clear';
 import DoneIcon from '@mui/icons-material/Done';
 import EditIcon from '@mui/icons-material/Edit';
-import { PaymentContext } from '../../context/paymentContext';
+import { PaymentContext } from '../../context/PaymentContext';
 import DraggableDialog from '../editTransaction/DraggableDialog';
 import { updateQuery, readQuery, deleteQuery, createQuery } from '../../axios/AxiosFunctions';
 
