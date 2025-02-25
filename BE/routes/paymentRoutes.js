@@ -28,7 +28,7 @@ router.get('/:id', (req, res) => {
     Controllers.paymentController.getPaymentsByID(req, res);
 })
 
-router.get('/userpayments/:debtid', (req, res) => {
+router.get('/debtpayments/:debtid', (req, res) => {
     Controllers.paymentController.getPaymentsByDebtID(req, res);
 })
 

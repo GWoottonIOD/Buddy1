@@ -10,7 +10,7 @@ export default function HomeMapComponent(props) {
     return (
         <div>
             <Grid container spacing={4}>
-                {props.debts.map((debt, index) => (
+                {props.payments.map((debt, index) => (
                     <Grid item key={index} xs={12} sm={6} md={4} lg={3}>
                         <Card
                             sx={{ height: '100%', display: 'flex', flexDirection: 'column' }}
@@ -23,11 +23,10 @@ export default function HomeMapComponent(props) {
                                 <Typography>
                                     ${debt.amount}
                                 </Typography>
-                                {/* <Typography>
-                                    Verified on: <br></br>
-                                    {debt.createdAt.slice(0, 10)}<br></br>
+                                 <Typography>
+                                    Paid: <br/>
+                                    {debt.createdAt.slice(0, 10)}<br/>
                                 </Typography>
-                                {props.paid == true ? <PaidComponent debt={debt} /> : <OverdueComponent debt={debt} />} */}
                             </CardContent>
                             <CardActions sx={{ display: 'flex', justifyContent: 'center'}}>
                                  {props.currentUser && props.currentUser.UserAdmin ?<PaidDeleteComponent debt={debt} currentUser={props.currentUser}/> : null }

@@ -24,7 +24,7 @@ const Navbar = () => {
   
   return (
     <>
-      <AppBar position="sticky" className='AppBar' sx={{ backgroundColor: '#4A8E51' }}>
+      <AppBar position="sticky" className='AppBar' sx={{ backgroundColor: '#4A8E51', minWidth: '100vw' }}>
         <Toolbar id="tool">
           <Typography variant="h6" color="inherit" noWrap id="toolItems">
             {currentUser.username && currentUser.UserAdmin && pathname !== '/users' ? users : null}

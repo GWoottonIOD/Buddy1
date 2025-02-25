@@ -4,7 +4,7 @@ import { useEffect, useContext } from 'react';
 import { DebtContext } from '../context/DebtContext';
 import { PageTypeContext } from '../context/PageTypeContext'
 import { SearchContext } from '../context/SearchContext'
-import FilterComponent from '../components/transactions/FilterComponent';
+import FilterComponent from '../components/payments/FilterComponent';
 import { readQuery } from '../axios/AxiosFunctions';
 import { useCurrentUserContext } from '../context/CurrentUserContext';
 import { useUserContext } from '../context/UserContext';
@@ -26,7 +26,7 @@ export default function PaymentHome() {
     currentUser.username ? null : navigate('/login')
     readQuery('users').then(response => setUsers(response))
     query.query==='' 
-      ? readQuery('payments').then(response => console.log(response))
+      ? readQuery('payments').then(response => setPayments(response))
       : readQuery('payments', query.query, 'userpayments').then(response => setPayments(response))
     setPageType('payments')
 }, [query.query, currentUser])
@@ -36,8 +36,8 @@ export default function PaymentHome() {
       <CssBaseline />
       <main>
         <Container sx={{ py: 8 }} maxWidth="md">
-          {currentUser 
-            ?<FilterComponent payments={payments} debts={payments}
+          {currentUser
+            ?<FilterComponent payments={payments}
             currentUser={currentUser} users={users}/>
             :null}
         </Container>
