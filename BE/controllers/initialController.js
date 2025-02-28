@@ -5,12 +5,12 @@ const { Op } = require("sequelize");
 
 // const storeData = async (table, body, res) => {
     const storeData = async (table, res) => {
-        // console.log(table.slice(0,1).toUpperCase() + table.slice(1))
+    //     console.log(table.slice(0,1).toUpperCase() + table.slice(1))
     // let response = await axios.get(`http://localhost:3000/${table.slice(0,1).toUpperCase() + table.slice(1)}/`); //The Models are in uppercase
-    let response = await axios.get(`http://localhost:3000/Debts`)
+    let response = await axios.get(`http://localhost:8063/api/debts`)
     try {
         //response from the JSON-server
-        const array = response.data; 
+        const array = response.data.data; 
         console.log(array)
         let debtArray = []
         let paymentArray = []
@@ -29,7 +29,7 @@ const { Op } = require("sequelize");
         // }
 
         const formatObjDebt = {
-            id: parseInt(i.id),
+            id: i.id,
             userID: i.userID,
             duedate: i.duedate, 
             total: i.total,
@@ -42,7 +42,7 @@ const { Op } = require("sequelize");
 
 
         const formatObjPay = {
-            debtID: parseInt(i.id),
+            debtID: i.id,
             userID: i.userID,          
             amount: i.amount,
             createdAt: i.updatedAt,
