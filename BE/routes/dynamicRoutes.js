@@ -18,6 +18,10 @@ router.delete('/', (req, res) => {
     Controllers.dropTables(req, res);
 })
 
+router.get('/filter/:key/', (req, res) => {
+    Controllers.getWhateverByWhatever(req, res);
+})
+
 router.get('/:id', (req, res) => {
     Controllers.getWhateverByID(req, res);
 })
